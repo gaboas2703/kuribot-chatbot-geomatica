@@ -5,8 +5,8 @@
 ### Instalación e inicio
 
 1. Instale Python 3.10 o superior (en Windows, marque «Add Python to PATH»).
-2. Descargue el proyecto desde el repositorio y el modelo desde su sección *Releases* (archivo `KuriBot_Modelo_BETO_v2.zip`, que se descomprime en la raíz del proyecto y crea `modelos/intenciones_beto_v2/`). Sin el modelo, la aplicación funciona con la línea base TF-IDF y lo indica en la barra lateral.
-3. En una terminal abierta en la carpeta del proyecto, ejecute `python -m pip install -r requirements.txt`.
+2. Descargue el proyecto desde el repositorio (botón *Code* → *Download ZIP*, o `git clone`).
+3. En una terminal abierta en la carpeta del proyecto, ejecute `python -m pip install -r requirements.txt` y, una sola vez, `python scripts/unir_modelo.py`. Este script une las cinco partes del modelo guardadas en `modelos/partes_beto_v2/`, porque GitHub no admite archivos de más de 100 MB, verifica sus sumas SHA-256 y crea `modelos/intenciones_beto_v2/`. Sin el modelo, la aplicación funciona con la línea base TF-IDF y lo indica en la barra lateral.
 4. Interfaz web: `streamlit run app_streamlit.py` (se abre `http://localhost:8501`). Consola: `python cli.py`; escriba `salir` para terminar.
 
 ### Uso de la interfaz web

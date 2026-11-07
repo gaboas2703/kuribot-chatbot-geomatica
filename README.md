@@ -22,13 +22,14 @@ respuestas por plantillas con datos verificados y trazabilidad completa.
 ## Ejecución rápida (Windows, macOS o Linux, Python 3.10–3.13)
 ```bash
 python -m pip install -r requirements.txt
+python scripts/unir_modelo.py         # una sola vez: reconstruye el modelo BETO ajustado
 streamlit run app_streamlit.py        # interfaz web en http://localhost:8501
 python cli.py                         # interfaz de consola
 ```
-El modelo ajustado (≈ 220 MB, float16) supera el límite de archivos de GitHub y se publica en la sección
-**Releases** del repositorio como `KuriBot_Modelo_BETO_v2.zip`. Descomprímalo en la raíz del proyecto: crea
-`modelos/intenciones_beto_v2/`. Si no está, la aplicación usa automáticamente la línea base TF-IDF
-(`modelos/intenciones_tfidf_v2.joblib`) y lo indica en la barra lateral.
+GitHub no admite archivos de más de 100 MB, así que el modelo ajustado (≈ 220 MB, float16) se guarda en cinco
+partes en `modelos/partes_beto_v2/`, con sus sumas SHA-256. `scripts/unir_modelo.py` las une, verifica la
+integridad y crea `modelos/intenciones_beto_v2/`. Si el modelo no está, la aplicación usa automáticamente la
+línea base TF-IDF (`modelos/intenciones_tfidf_v2.joblib`) y lo indica en la barra lateral.
 
 ## Reproducir los experimentos
 ```bash
@@ -68,6 +69,8 @@ En Google Colab: abrir `cuaderno/KuriBot_Colab.ipynb` y ejecutar todas las celda
 | `experimentos/` | Entrenamiento, evaluación y figuras |
 | `pruebas/` | Pruebas unitarias (34, pytest), suite de aceptación (34 escenarios) y confirmación (8) |
 | `resultados/` | Métricas, predicciones y evidencias de cada versión |
+| `modelos/` | Línea base TF-IDF y partes del modelo BETO ajustado |
+| `scripts/` | Extracción de BETO desde spaCy y reconstrucción del modelo ajustado |
 | `docs/` | Figuras, capturas e informe (fuentes Markdown, plantilla de formato y generador) |
 | `cuaderno/` | Cuaderno para Google Colab |
 
@@ -75,4 +78,4 @@ En Google Colab: abrir `cuaderno/KuriBot_Colab.ipynb` y ejecutar todas las celda
 No usar en producción. No conecta con catastro oficial, ARCOM, servicios meteorológicos ni sistemas de
 seguridad reales; los tickets y derivaciones son simulados. Las TPC de la red bayesiana y los umbrales
 son supuestos expertos a calibrar. El pipeline de spaCy del que se extrae BETO se distribuye con
-licencia GPL-3.0, condición que hereda el modelo ajustado publicado en Releases.
+licencia GPL-3.0, condición que hereda el modelo ajustado de `modelos/partes_beto_v2/`.

@@ -59,6 +59,7 @@ CODIGO = [
     ("pruebas/test_unitarias.py", "Pruebas unitarias"),
     ("pruebas/suite_aceptacion.py", "Suite de aceptación y confirmación"),
     ("scripts/extraer_beto.py", "Extracción de BETO desde el pipeline de spaCy"),
+    ("scripts/unir_modelo.py", "Reconstrucción del modelo ajustado desde el repositorio"),
 ]
 
 
