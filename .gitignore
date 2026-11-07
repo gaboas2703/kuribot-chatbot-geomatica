@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+# Pesos grandes: se distribuyen aparte (GitHub limita archivos a 100 MB)
+modelos/beto_base/
+modelos/intenciones_beto_v*/
+# Intermedios de LaTeX
+docs/informe/*.aux
+docs/informe/*.log
+docs/informe/*.lof
+docs/informe/*.lot
+docs/informe/*.toc
+docs/informe/plantilla/_referencia.docx
+docs/informe/__pycache__/
+registros/*.jsonl

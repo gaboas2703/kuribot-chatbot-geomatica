@@ -1,0 +1,212 @@
+{
+ "resumen": {
+  "version": "v2",
+  "modelo": "BETO ajustado (intenciones_beto_v2)",
+  "escenarios": 8,
+  "aprobados": 7,
+  "tasa": 0.875,
+  "turnos": 8,
+  "latencia_media_ms": 38.9125,
+  "latencia_p95_ms": 43.0
+ },
+ "escenarios": [
+  {
+   "id": "C01",
+   "descripcion": "Alerta con coordenadas y dos evidencias",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "reporto maquinaria y una trocha nueva en E 646900 N 9660300 WGS84",
+     "respuesta": "Alerta registrada: GEO-2026-0431 · prioridad CRÍTICA. Ubicación: CM-106 Los Laureles (concesión propia). Evidencias: maquinaria pesada o equipos (sí), vía o trocha nueva (sí). Antecedentes en 90 días: sí; actividad autorizada programada: no. Probabilidad estimada de actividad no autorizada: 99,3 % (red bayesiana con supuestos expertos; no es una certeza). Acción propuesta: Vuelo de verificación prioritario (≤ 24 h) y notificación a Seguridad y Legal. Primera ventana de vuelo apta: 2026-11-09 (DRN-01, Piloto A). Antes de ejecutar, el supervisor de turno debe aprobar la acción (R41).",
+     "intencion": "reportar_alerta",
+     "confianza": 0.9646,
+     "decision": "aceptar",
+     "accion": "Vuelo de verificación prioritario (≤ 24 h) y notificación a Seguridad y Legal",
+     "reglas": [
+      "R10",
+      "R21",
+      "R30",
+      "R41",
+      "R42"
+     ],
+     "p_intrusion": 0.9925558312655086,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 42.2,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "C02",
+   "descripcion": "Teléfono enmascarado en una solicitud de cartografía",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "llámame al 0991234567 para coordinar, necesito un plano topográfico de CM-106",
+     "respuesta": "Solicitud GEO-2026-0431 registrada: plano topográfico de CM-106. Plazo interno de referencia: 3 día(s) hábil(es). El producto se entregará en EPSG:32717 salvo que indique otro sistema.",
+     "intencion": "solicitar_cartografia",
+     "confianza": 0.8841,
+     "decision": "aceptar",
+     "accion": "crear_ticket",
+     "reglas": [
+      "R02"
+     ],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 33.6,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "C03",
+   "descripcion": "Emergencia sin la palabra «emergencia»",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "auxilio, hay heridos en la vía al campamento sur",
+     "respuesta": "EMERGENCIA: si hay personas en riesgo, llame de inmediato al ECU 911 y al Jefe de Seguridad del campamento. Aléjese del lugar si es seguro hacerlo. No se enviará personal ni dron a la zona hasta que Seguridad lo autorice (R01). Registré el caso GEO-2026-0431 con prioridad CRÍTICA y lo derivé a una persona.",
+     "intencion": "emergencia_seguridad",
+     "confianza": 0.9975,
+     "decision": "aceptar",
+     "accion": "PROTOCOLO DE EMERGENCIA",
+     "reglas": [
+      "R01",
+      "R42"
+     ],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 37.3,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "C04",
+   "descripcion": "Conversión desde grados, minutos y segundos",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "pasa 3°03'04\"S 79°43'48\"W a UTM, datum WGS84",
+     "respuesta": "Origen: WGS84. Resultados: WGS 84 / UTM 17S (EPSG:32717): E 641 131,78 m, N 9 662 674,08 m · WGS 84 geográficas (EPSG:4326): -3.051111, -79.730000 (3°03'04.00\"S, 79°43'48.00\"W) · PSAD56 / UTM 17S (EPSG:24877): E 641 383,27 m, N 9 663 038,55 m. Transformación de datum: PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m). SIRGAS 2000 se considera equivalente a WGS 84 al nivel métrico.",
+     "intencion": "convertir_coordenadas",
+     "confianza": 0.9803,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 43.8,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "C05",
+   "descripcion": "Vuelo con día de la semana",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "agenda un vuelo sobre La Ventana el viernes",
+     "respuesta": "Fecha solicitada apta. Propuesta: vuelo en CM-103 el 2026-11-13 con DRN-01 y Piloto A (viento 6,2 m/s, sin lluvia, visibilidad 10 km). Solicitud GEO-2026-0431 registrada como pendiente de aprobación del coordinador de vuelos.",
+     "intencion": "solicitar_vuelo",
+     "confianza": 0.968,
+     "decision": "aceptar",
+     "accion": "programar_vuelo",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 35.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "C06",
+   "descripcion": "FAQ formulada de otra manera",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿qué ventaja tiene el RTK frente al GPS navegador?",
+     "respuesta": "Un receptor de navegación suele ofrecer exactitudes horizontales del orden de unos metros, y empeora bajo cobertura vegetal. El posicionamiento RTK usa correcciones de una base en tiempo real y, con solución fija, alcanza exactitud del orden de centímetros. Para linderos y control use GNSS geodésico. (Fuente: Práctica geodésica.)",
+     "intencion": "consulta_geodesia",
+     "confianza": 0.9734,
+     "decision": "aceptar",
+     "accion": "responder_faq",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 43.0,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "C07",
+   "descripcion": "Clima fuera del contexto de vuelos",
+   "aprobado": false,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿va a llover mañana en Machala?",
+     "respuesta": "¿Sobre qué concesión necesita el vuelo? (código o nombre)",
+     "intencion": "solicitar_vuelo",
+     "confianza": 0.9104,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:concesion",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 37.2,
+     "evaluado": true,
+     "ok": false,
+     "fallos": [
+      "intención solicitar_vuelo ∉ ['fuera_alcance']",
+      "no contiene ninguno de los fragmentos esperados"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C08",
+   "descripcion": "Estado de ticket en registro informal",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "porfa el estatus del GEO-2026-0430",
+     "respuesta": "GEO-2026-0430 (alerta: Turbidez aguas abajo de CM-106): estado «En verificación de campo», responsable Seguridad patrimonial, fecha comprometida 2026-11-11.",
+     "intencion": "estado_solicitud",
+     "confianza": 0.9845,
+     "decision": "aceptar",
+     "accion": "consultar_ticket",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0430",
+     "latencia_ms": 38.3,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  }
+ ]
+}

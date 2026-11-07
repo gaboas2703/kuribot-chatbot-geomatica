@@ -1,0 +1,505 @@
+conjunto,texto,real,pred_M0,pred_M1,pred_M2,pred_M3,conf_M0,conf_M1,conf_M2,conf_M3
+prueba_limpia,buenos dias kuribot,saludo,saludo,saludo,saludo,saludo,0.9987,0.9892,0.9856,0.9991
+prueba_limpia,hola hola,saludo,saludo,saludo,saludo,saludo,1.0,0.9982,0.9995,0.9996
+prueba_limpia,muy buenas tardes,saludo,saludo,saludo,saludo,saludo,0.9992,0.9982,0.9924,0.9995
+prueba_limpia,holaaa buen dia,saludo,saludo,saludo,saludo,saludo,0.9997,0.7177,0.9959,0.9996
+prueba_limpia,saludos desde el campamento sur,saludo,saludo,saludo,saludo,saludo,0.9387,0.9545,0.9322,0.9984
+prueba_limpia,hola q tal,saludo,saludo,saludo,saludo,saludo,1.0,0.997,0.9948,0.9996
+prueba_limpia,"buenas, ¿todo bien?",saludo,saludo,saludo,saludo,saludo,0.9961,0.9748,0.9903,0.999
+prueba_limpia,"hola, primer día usando esto",saludo,saludo,saludo,saludo,saludo,0.9972,0.994,0.9766,0.9946
+prueba_limpia,buen día compañero,saludo,saludo,saludo,saludo,saludo,0.9831,0.9862,0.9997,0.9991
+prueba_limpia,ey hola,saludo,saludo,saludo,despedida,saludo,1.0,0.9898,0.5977,0.9993
+prueba_limpia,buenas noches asistente,saludo,saludo,saludo,saludo,saludo,0.9978,0.9949,0.9881,0.9997
+prueba_limpia,"hola, ¿estás disponible?",saludo,saludo,saludo,saludo,saludo,0.9912,0.9752,0.9861,0.9991
+prueba_limpia,"saludos, soy nuevo en geomática",saludo,saludo,saludo,saludo,saludo,0.9769,0.9828,0.8744,0.8735
+prueba_limpia,"qué hubo, buenas",saludo,saludo,saludo,saludo,saludo,0.9987,0.9532,0.7223,0.9967
+prueba_limpia,hola de parte de seguridad,saludo,saludo,saludo,saludo,saludo,0.8664,0.9804,0.3441,0.9988
+prueba_limpia,buenas tardes a todos,saludo,saludo,saludo,saludo,saludo,0.9996,0.9891,0.9863,0.9995
+prueba_limpia,hola otra vez,saludo,saludo,saludo,saludo,saludo,0.9998,0.9918,0.9636,0.9997
+prueba_limpia,"buen día, ¿qué tal la mañana?",saludo,saludo,saludo,saludo,saludo,0.9973,0.9576,0.5731,0.9951
+prueba_limpia,grax,despedida,despedida,despedida,saludo,ayuda_capacidades,0.7598,0.2528,0.9067,0.998
+prueba_limpia,muchas gracias por todo,despedida,despedida,despedida,despedida,despedida,0.9999,0.9983,0.9959,0.9991
+prueba_limpia,"ya, chao",despedida,despedida,despedida,despedida,despedida,0.9992,0.9968,0.9996,0.9997
+prueba_limpia,nos vemos mañana,despedida,despedida,despedida,despedida,despedida,0.9941,0.9918,0.9964,0.9978
+prueba_limpia,"listo eso era, bye",despedida,despedida,despedida,despedida,despedida,0.998,0.9948,0.9912,0.9994
+prueba_limpia,gracias crack,despedida,despedida,despedida,saludo,despedida,0.9999,0.9953,0.6125,0.999
+prueba_limpia,"ok, hasta otra",despedida,despedida,despedida,despedida,despedida,0.9953,0.9863,0.9871,0.9974
+prueba_limpia,"muy amable, me retiro",despedida,despedida,despedida,despedida,despedida,0.69,0.731,0.9731,0.9989
+prueba_limpia,agradecido con la ayuda,despedida,despedida,hablar_humano,emergencia_seguridad,despedida,0.8166,0.6218,0.4968,0.9962
+prueba_limpia,adios kuribot,despedida,despedida,despedida,consultar_concesion,saludo,0.9943,0.2543,0.3152,0.8393
+prueba_limpia,"ya terminé, gracias",despedida,despedida,despedida,despedida,despedida,0.9999,0.9972,0.9977,0.9996
+prueba_limpia,perfecto mil gracias,despedida,despedida,despedida,despedida,despedida,0.9997,0.9932,0.9929,0.9994
+prueba_limpia,hasta la vista,despedida,despedida,despedida,consultar_concesion,despedida,0.9669,0.8317,0.3746,0.9992
+prueba_limpia,eso sería todo,despedida,despedida,despedida,despedida,despedida,0.955,0.9788,0.5087,0.9983
+prueba_limpia,"buenas noches, ya me voy",despedida,saludo,saludo,saludo,despedida,0.9923,0.9894,0.5787,0.5201
+prueba_limpia,"chévere, gracias",despedida,despedida,despedida,despedida,despedida,0.9999,0.9943,0.9989,0.9994
+prueba_limpia,"listo, cerramos",despedida,despedida,despedida,despedida,despedida,0.8408,0.7269,0.9909,0.994
+prueba_limpia,"gracias, quedo atento",despedida,despedida,despedida,despedida,despedida,0.9965,0.9929,0.9947,0.9996
+prueba_limpia,q puedes hacer,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9967,0.997,0.9162,0.9987
+prueba_limpia,ayudaaa,ayuda_capacidades,ayuda_capacidades,despedida,despedida,ayuda_capacidades,0.8899,0.2528,0.5807,0.8824
+prueba_limpia,¿cuál es tu alcance?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.569,0.9764,0.9825,0.9997
+prueba_limpia,enséñame a usarte,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9334,0.913,0.7685,0.9906
+prueba_limpia,¿qué servicios tienes?,ayuda_capacidades,consulta_geodesia,consulta_geodesia,ayuda_capacidades,ayuda_capacidades,0.5781,0.4377,0.9888,0.9641
+prueba_limpia,opciones porfa,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9961,0.9901,0.3947,0.984
+prueba_limpia,¿tienes un menú?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,fuera_alcance,fuera_alcance,0.9461,0.8588,0.599,0.6251
+prueba_limpia,¿qué consultas aceptas?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.8312,0.9755,0.9993,0.9997
+prueba_limpia,"soy nuevo, ¿cómo funcionas?",ayuda_capacidades,ayuda_capacidades,fuera_alcance,ayuda_capacidades,ayuda_capacidades,0.7574,0.6036,0.9084,0.9992
+prueba_limpia,¿para qué te crearon?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9634,0.7619,0.9739,0.9851
+prueba_limpia,dame las opciones del asistente,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9902,0.9722,0.6885,0.8554
+prueba_limpia,¿qué puedo pedirte?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9059,0.3639,0.9995,0.9999
+prueba_limpia,mostrar ayuda,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,despedida,ayuda_capacidades,0.9957,0.9684,0.3245,0.9978
+prueba_limpia,¿en qué temas eres bueno?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.6188,0.8108,0.9806,0.9962
+prueba_limpia,¿cómo se usa esto?,ayuda_capacidades,fuera_alcance,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.6163,0.7118,0.8054,0.6449
+prueba_limpia,quiero ver qué haces,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9801,0.9973,0.9967,0.9994
+prueba_limpia,¿qué funciones tiene el bot?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,consulta_geodesia,ayuda_capacidades,0.986,0.9715,0.6313,0.7917
+prueba_limpia,explica tus funciones,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9987,0.998,0.9955,0.9996
+prueba_limpia,estado de San Gregorio porfa,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9713,0.9553,0.5264,0.9843
+prueba_limpia,El Roble sigue vigente?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9837,0.9448,0.9806,0.9541
+prueba_limpia,ficha de San Gregorio,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9931,0.9723,0.9376,0.9871
+prueba_limpia,necesito la info catastral de la La Ventana,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9926,0.983,0.9727,0.9963
+prueba_limpia,¿cuánto mide la concesión peña blanca?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.996,0.9825,0.9845,0.9985
+prueba_limpia,¿la El Roble está suspendida?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9713,0.9718,0.4623,0.9478
+prueba_limpia,revisame la concesion cerro azul,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9991,0.8836,0.9997,0.9924
+prueba_limpia,¿qué fase tiene la El Roble?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9987,0.9943,0.9962,0.9844
+prueba_limpia,quiero ver los datos del área peña blanca,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9437,0.9652,0.9802,0.984
+prueba_limpia,titular y estado de CM-104,consultar_concesion,consultar_concesion,solicitar_cartografia,hablar_humano,consultar_concesion,0.7114,0.2532,0.349,0.9659
+prueba_limpia,dime si CM-103 está activa,consultar_concesion,consultar_concesion,consultar_concesion,verificar_punto,consultar_concesion,0.4544,0.9187,0.8475,0.8485
+prueba_limpia,¿cuál es la superficie concesionada de El Roble?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9978,0.9267,0.3546,0.7868
+prueba_limpia,datos del derecho minero san gregorio,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9974,0.9944,0.9956,0.9934
+prueba_limpia,consultar concesion,consultar_concesion,consultar_concesion,ayuda_capacidades,estado_solicitud,estado_solicitud,0.9925,0.3804,0.6527,0.9476
+prueba_limpia,¿a qué campamento corresponde el roble?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9631,0.9631,0.9792,0.9889
+prueba_limpia,situación actual de la concesión CM-104,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9994,0.9444,0.9902,0.9941
+prueba_limpia,resumen catastral de CM-103,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.996,0.961,0.9567,0.9954
+prueba_limpia,¿San Gregorio está en trámite?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.8915,0.7367,0.6156,0.9261
+prueba_limpia,-3.0601 -79.7215 esta dentro?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9997,0.6928,0.9315,0.9926
+prueba_limpia,¿ese punto x=644800 y=9661500 es nuestro?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9929,0.748,0.9338,0.9893
+prueba_limpia,chequea E 642600 N 9662480 PSAD56 contra el catastro,verificar_punto,verificar_punto,verificar_punto,convertir_coordenadas,verificar_punto,0.8683,0.9336,0.3057,0.9983
+prueba_limpia,"¿la coordenada -3.0512, -79.7301 cae en la concesión o fuera?",verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9944,0.9851,0.9622,0.9929
+prueba_limpia,dónde queda -3.0601 -79.7215,verificar_punto,verificar_punto,verificar_punto,verificar_punto,convertir_coordenadas,0.8168,0.7581,0.8323,0.8553
+prueba_limpia,¿E 641100 N 9664950 WGS84 invade alguna concesión de terceros?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9816,0.8367,0.6035,0.9976
+prueba_limpia,verifica ubicación del hito E 642600 N 9662480 PSAD56,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9909,0.9808,0.9943,0.9992
+prueba_limpia,"¿a cuántos metros del límite está -3.0512, -79.7301?",verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9252,0.9765,0.9779,0.9943
+prueba_limpia,confirma si 643990 9661010 psad56 cae en área minera,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9504,0.9669,0.9895,0.9984
+prueba_limpia,"tengo esta posición -3.0512, -79.7301, ¿a qué concesión corresponde?",verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9938,0.821,0.8865,0.9977
+prueba_limpia,"¿el campamento en -3.0512, -79.7301 está dentro del lindero?",verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9996,0.9806,0.9858,0.9917
+prueba_limpia,revisar si un punto está dentro,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9867,0.9176,0.9887,0.7416
+prueba_limpia,ubícame x=644800 y=9661500,verificar_punto,verificar_punto,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.8745,0.4467,0.5194,0.9749
+prueba_limpia,¿lat -3.0455 lon -79.7262 está cerca de un área protegida?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9955,0.9387,0.9892,0.9938
+prueba_limpia,comprobar coordenada en polígono,verificar_punto,verificar_punto,convertir_coordenadas,verificar_punto,convertir_coordenadas,0.7346,0.6781,0.5847,0.981
+prueba_limpia,¿lat -3.0455 lon -79.7262 queda dentro del área concesionada?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9987,0.9352,0.9735,0.9979
+prueba_limpia,consulta si 640500 9665200 wgs84 pertenece a la empresa,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.8615,0.9155,0.9596,0.9953
+prueba_limpia,¿la plataforma en -3.0601 -79.7215 está en regla?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9833,0.9283,0.8649,0.9955
+prueba_limpia,pasame E 641100 N 9664950 WGS84 a wgs84,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9983,0.9173,0.9868,0.9974
+prueba_limpia,conviérteme 646900 9660300,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9639,0.4467,0.8181,0.9816
+prueba_limpia,"3°03'04""S 79°43'48""W a geograficas",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9972,0.9415,0.794,0.997
+prueba_limpia,necesito 643990 9661010 psad56 en psad 56,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9068,0.7874,0.9932,0.9387
+prueba_limpia,"transforma de psad a wgs las coordenadas 3°03'04""S 79°43'48""W",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9988,0.9822,0.989,0.9977
+prueba_limpia,"¿me das E: 645210, N: 9663790 en lat long?",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9496,0.4737,0.8473,0.5034
+prueba_limpia,reproyectar x=644800 y=9661500,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.7854,0.4467,0.4711,0.9678
+prueba_limpia,convertir coordenadas por favor,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,hablar_humano,convertir_coordenadas,0.9984,0.9843,0.463,0.9966
+prueba_limpia,cambia E 642350 N 9662120 a UTM 17S,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9965,0.991,0.98,0.997
+prueba_limpia,¿cuál es el equivalente de x=644800 y=9661500 en WGS 84?,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,consulta_geodesia,convertir_coordenadas,0.4337,0.4352,0.5702,0.9764
+prueba_limpia,"de UTM a geográficas: -3.0512, -79.7301",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9985,0.9636,0.9116,0.9982
+prueba_limpia,quiero E 641100 N 9664950 WGS84 en grados decimales,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9948,0.966,0.9429,0.9979
+prueba_limpia,"transformación de datum para 642350, 9662120",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9973,0.969,0.9968,0.9953
+prueba_limpia,convertir punto a otro sistema de coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,hablar_humano,convertir_coordenadas,0.9969,0.9936,0.6315,0.9898
+prueba_limpia,¿cómo se expresa E 641100 N 9664950 WGS84 en PSAD56?,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9809,0.7823,0.5413,0.9973
+prueba_limpia,"642350, 9662120 a sirgas",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.958,0.9735,0.5354,0.9791
+prueba_limpia,dame lat -3.0455 lon -79.7262 convertido,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9769,0.4617,0.9703,0.9613
+prueba_limpia,conversión geodésica de -3.0601 -79.7215,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.8444,0.9166,0.8327,0.9967
+prueba_limpia,hay mineros ilegales en peña blanca,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9699,0.9757,0.9938,0.9967
+prueba_limpia,vieron una excavadora rara en Cerro Azul,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9821,0.7508,0.99,0.9988
+prueba_limpia,alerta! gente trabajando sin permiso en Peña Blanca,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9971,0.9859,0.6328,0.8212
+prueba_limpia,quiero denunciar una invasion,reportar_alerta,reportar_alerta,hablar_humano,reportar_alerta,reportar_alerta,0.9334,0.278,0.9851,0.8206
+prueba_limpia,el rio esta turbio y sospechamos de peña blanca,reportar_alerta,reportar_alerta,solicitar_cartografia,reportar_alerta,reportar_alerta,0.6005,0.6774,0.5143,0.9604
+prueba_limpia,se oyen explosiones de noche por El Roble,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.7227,0.3697,0.9818,0.9832
+prueba_limpia,apareció un camino nuevo en la ventana,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,reportar_alerta,0.9455,0.5456,0.9103,0.9755
+prueba_limpia,reportar actividad no autorizada,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9982,0.9718,0.8917,0.9963
+prueba_limpia,hay un desbroce raro en la imagen de CM-106,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,reportar_alerta,0.9361,0.8706,0.5339,0.9911
+prueba_limpia,informales metidos en la ventana,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,0.9879,0.9133,0.6391,0.6813
+prueba_limpia,la comunidad avisa de volquetas en san gregorio,reportar_alerta,consultar_concesion,reportar_alerta,reportar_alerta,reportar_alerta,0.5904,0.5853,0.5996,0.974
+prueba_limpia,encontramos labores clandestinas en Cerro Azul,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9556,0.8627,0.9844,0.9984
+prueba_limpia,hay una draga en el río dentro de Peña Blanca,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,reportar_alerta,0.9788,0.9504,0.6509,0.9907
+prueba_limpia,sospecha de extracción ilegal en peña blanca,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9789,0.7923,0.899,0.9959
+prueba_limpia,registrar una intrusión en el lindero,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9856,0.9459,0.5024,0.9909
+prueba_limpia,hay movimiento de tierra no autorizado en CM-105,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9957,0.9403,0.9272,0.9943
+prueba_limpia,reporte de invasión minera,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9534,0.4947,0.3615,0.7409
+prueba_limpia,vimos un campamento de informales en El Roble,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9454,0.9642,0.7758,0.9874
+prueba_limpia,mandame el dron a peña blanca,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,consultar_concesion,solicitar_vuelo,0.9483,0.8983,0.6631,0.9923
+prueba_limpia,ocupo un vuelo en CM-105 mañana,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9963,0.9394,0.9737,0.9946
+prueba_limpia,agenda drone para el roble,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,consultar_concesion,solicitar_vuelo,0.9703,0.9757,0.658,0.9798
+prueba_limpia,¿pueden sobrevolar CM-105?,solicitar_vuelo,solicitar_vuelo,solicitar_cartografia,solicitar_vuelo,solicitar_vuelo,0.9442,0.3756,0.5589,0.6941
+prueba_limpia,vuelo de inspeccion el 12 de noviembre,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9999,0.9751,0.962,0.9747
+prueba_limpia,necesito una ortofoto nueva de CM-103,solicitar_vuelo,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_vuelo,0.4987,0.9223,0.7576,0.5768
+prueba_limpia,solicitud de sobrevuelo,solicitar_vuelo,solicitar_vuelo,estado_solicitud,estado_solicitud,consulta_geodesia,0.7466,0.4574,0.6731,0.2961
+prueba_limpia,¿está libre el dron el lunes?,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,consultar_concesion,solicitar_vuelo,0.9917,0.8834,0.3623,0.9931
+prueba_limpia,programar vuelo fotogramétrico en CM-104,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9959,0.9779,0.9894,0.9894
+prueba_limpia,inspección aérea en cerro azul urgente,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,consultar_concesion,solicitar_vuelo,0.9936,0.9881,0.8981,0.9871
+prueba_limpia,quiero volar el dron sobre la relavera de Los Laureles,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9979,0.9932,0.9477,0.9964
+prueba_limpia,reserva un vuelo para el 12 de noviembre,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,fuera_alcance,0.9972,0.9759,0.7365,0.5215
+prueba_limpia,vuelo RPAS en CM-105,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9975,0.9688,0.961,0.9853
+prueba_limpia,necesito imágenes con dron del lindero de peña blanca,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_cartografia,solicitar_cartografia,0.7238,0.9465,0.8284,0.7044
+prueba_limpia,¿me programan un vuelo?,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,fuera_alcance,fuera_alcance,0.9224,0.7798,0.9372,0.6419
+prueba_limpia,sobrevuelo de verificación en San Gregorio hoy,solicitar_vuelo,solicitar_vuelo,reportar_alerta,solicitar_vuelo,solicitar_vuelo,0.8797,0.4376,0.9001,0.9853
+prueba_limpia,vuelo para cubicar el stock de peña blanca,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9587,0.9879,0.483,0.9624
+prueba_limpia,dron a CM-106 porfa,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,convertir_coordenadas,solicitar_vuelo,0.9884,0.9437,0.4029,0.9966
+prueba_limpia,mapa de cerro azul porfa,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9951,0.9743,0.4469,0.9565
+prueba_limpia,me envías el kmz de CM-106?,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9958,0.792,0.9646,0.9934
+prueba_limpia,ocupo el shape de linderos,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,hablar_humano,0.9249,0.8236,0.8348,0.322
+prueba_limpia,necesito mapa topográfico de san gregorio urgente,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9862,0.9878,0.5322,0.9964
+prueba_limpia,quiero un plano de CM-106,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9985,0.9844,0.9794,0.9976
+prueba_limpia,solicitar mapa topografico,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,hablar_humano,solicitar_cartografia,0.9802,0.9351,0.3772,0.9792
+prueba_limpia,¿me hacen un mapa de ubicación?,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.995,0.9442,0.8975,0.9689
+prueba_limpia,curvas de nivel de el roble,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,emergencia_seguridad,solicitar_cartografia,0.9826,0.96,0.4863,0.9612
+prueba_limpia,dame el KMZ de la la ventana,solicitar_cartografia,solicitar_cartografia,consultar_concesion,consultar_concesion,solicitar_cartografia,0.8045,0.7361,0.8736,0.9392
+prueba_limpia,requiero un mapa para el informe mensual,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9987,0.981,0.9829,0.9964
+prueba_limpia,necesito la cartografía base del campamento Norte,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9886,0.969,0.9509,0.9967
+prueba_limpia,exportar polígono de san gregorio a kml,solicitar_cartografia,consultar_concesion,consultar_concesion,reportar_alerta,solicitar_vuelo,0.6834,0.3012,0.3746,0.8744
+prueba_limpia,mapa temático de cobertura de Cerro Azul,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9657,0.9853,0.8945,0.9934
+prueba_limpia,¿tienen el MDT de El Roble?,solicitar_cartografia,solicitar_cartografia,consultar_concesion,solicitar_cartografia,solicitar_cartografia,0.7013,0.5353,0.8449,0.9888
+prueba_limpia,plano en pdf de La Ventana,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_vuelo,solicitar_cartografia,0.9559,0.9711,0.2129,0.7597
+prueba_limpia,pedir cartografía nueva,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,consultar_concesion,solicitar_cartografia,0.628,0.7774,0.7018,0.9515
+prueba_limpia,mapa de accesos a la ventana,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9974,0.9691,0.8208,0.9688
+prueba_limpia,necesito la capa de hitos,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9785,0.9299,0.5642,0.8467
+prueba_limpia,como va GEO-2026-0415,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9994,0.9506,0.8759,0.9706
+prueba_limpia,estado GEO-2026-0430,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,1.0,0.9691,0.9943,0.9802
+prueba_limpia,¿ya está mi ticket?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,1.0,0.9854,0.9951,0.9874
+prueba_limpia,seguimiento GEO-2026-0430 porfa,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9985,0.9668,0.9407,0.9955
+prueba_limpia,¿qué pasó con GEO-2026-0415?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.991,0.9392,0.7891,0.9941
+prueba_limpia,¿ya me atendieron el pedido?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,fuera_alcance,0.363,0.6438,0.443,0.373
+prueba_limpia,¿cuándo estará listo GEO-2026-0430?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9987,0.9473,0.984,0.9983
+prueba_limpia,revisar mi solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9963,0.981,0.732,0.9733
+prueba_limpia,novedades del caso GEO-2026-0415,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9976,0.9843,0.9819,0.9971
+prueba_limpia,¿mi vuelo ya está programado?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.5957,0.4382,0.4443,0.4945
+prueba_limpia,¿GEO-2026-0430 ya se cerró?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9996,0.9537,0.7866,0.9976
+prueba_limpia,estatus de mi requerimiento,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9952,0.8737,0.9974,0.7173
+prueba_limpia,¿quién tiene asignado GEO-2026-0419?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.994,0.9816,0.9259,0.9974
+prueba_limpia,¿hay avances con GEO-2026-0419?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9981,0.9753,0.9686,0.9971
+prueba_limpia,consultar ticket,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9998,0.975,0.7434,0.9976
+prueba_limpia,¿en qué va mi pedido de mapa?,estado_solicitud,estado_solicitud,estado_solicitud,consulta_geodesia,consulta_geodesia,0.3527,0.7548,0.896,0.8044
+prueba_limpia,quiero saber el estado de GEO-2026-0423,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9997,0.9819,0.995,0.9994
+prueba_limpia,¿ya revisaron mi alerta?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.8978,0.386,0.9566,0.9194
+prueba_limpia,psad56 vs wgs84 cual es la diferencia,consulta_geodesia,consulta_geodesia,consulta_geodesia,convertir_coordenadas,consulta_geodesia,0.9991,0.9673,0.2717,0.5522
+prueba_limpia,¿qué EPSG es WGS84 UTM 17S?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.997,0.9912,0.9886,0.9994
+prueba_limpia,¿cuál es el sistema de referencia oficial del país?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9967,0.9844,0.6786,0.9895
+prueba_limpia,explícame qué es SIRGAS,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.7411,0.9898,0.6274,0.8361
+prueba_limpia,¿por qué el punto me sale corrido en el mapa?,consulta_geodesia,consulta_geodesia,consulta_geodesia,verificar_punto,consulta_geodesia,0.5884,0.8099,0.2452,0.5219
+prueba_limpia,¿qué tan preciso es el gps de mano?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9879,0.991,0.957,0.9971
+prueba_limpia,¿qué es RTK?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9974,0.9361,0.9896,0.9802
+prueba_limpia,¿en qué formato entrego la cartografía?,consulta_geodesia,solicitar_cartografia,consulta_geodesia,fuera_alcance,consulta_geodesia,0.7816,0.872,0.5404,0.6959
+prueba_limpia,¿qué reglas hay para volar dron?,consulta_geodesia,solicitar_vuelo,solicitar_vuelo,consulta_geodesia,consulta_geodesia,0.9291,0.9091,0.3719,0.929
+prueba_limpia,¿cuántos metros cambia de PSAD a WGS?,consulta_geodesia,fuera_alcance,consulta_geodesia,convertir_coordenadas,consulta_geodesia,0.5437,0.6149,0.4262,0.7502
+prueba_limpia,¿qué es la zona 17 sur?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9956,0.9784,0.5488,0.9893
+prueba_limpia,¿qué es un datum?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9997,0.9926,0.9979,0.9993
+prueba_limpia,¿qué datos debe tener un reporte de alerta?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.6378,0.8088,0.9832,0.9946
+prueba_limpia,¿cuánto se demora un mapa?,consulta_geodesia,consulta_geodesia,consulta_geodesia,fuera_alcance,consulta_geodesia,0.4747,0.6858,0.8796,0.9929
+prueba_limpia,diferencia entre altura del gps y altura sobre el nivel del mar,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9749,0.9261,0.6521,0.8411
+prueba_limpia,¿qué es una ortofoto y para qué sirve?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9272,0.9954,0.9302,0.9984
+prueba_limpia,¿qué es el código EPSG?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9963,0.6563,0.5783,0.9996
+prueba_limpia,¿cómo identifico el datum de unas coordenadas?,consulta_geodesia,convertir_coordenadas,convertir_coordenadas,solicitar_cartografia,solicitar_cartografia,0.9546,0.7753,0.4875,0.6818
+prueba_limpia,una persona porfa,hablar_humano,hablar_humano,hablar_humano,despedida,hablar_humano,0.9586,0.7515,0.2648,0.7418
+prueba_limpia,quiero un humano,hablar_humano,hablar_humano,hablar_humano,solicitar_cartografia,hablar_humano,0.9918,0.9897,0.7131,0.9919
+prueba_limpia,pásame con tu supervisor,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9762,0.5979,0.9991,0.9997
+prueba_limpia,¿me comunicas con geomática?,hablar_humano,hablar_humano,hablar_humano,ayuda_capacidades,hablar_humano,0.8985,0.9634,0.5744,0.8303
+prueba_limpia,necesito un analista real,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9709,0.7626,0.9873,0.998
+prueba_limpia,derívame con un técnico,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9944,0.9971,1.0,0.9998
+prueba_limpia,que me llame alguien del área,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9869,0.9681,0.9966,0.9996
+prueba_limpia,quiero atención personalizada,hablar_humano,hablar_humano,hablar_humano,fuera_alcance,hablar_humano,0.8997,0.4872,0.8271,0.8591
+prueba_limpia,operador por favor,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.625,0.8559,0.6692,0.9829
+prueba_limpia,"esto no lo resuelves tú, pásame con alguien",hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9885,0.9578,0.9851,0.9883
+prueba_limpia,contacto con un especialista en catastro,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9992,0.9779,0.8393,0.9972
+prueba_limpia,escalar a un humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.999,0.9893,0.9761,0.9561
+prueba_limpia,¿puedo hablar con el ingeniero de turno?,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9983,0.9982,0.9869,0.9992
+prueba_limpia,quiero que lo revise una persona,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9952,0.9943,0.9983,0.9992
+prueba_limpia,comunicarme con el área legal,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.3888,0.8835,0.9702,0.988
+prueba_limpia,no quiero hablar con un bot,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9989,0.9838,0.8938,0.9244
+prueba_limpia,conéctame con soporte,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.84,0.9161,0.999,0.776
+prueba_limpia,necesito hablar con el responsable,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9989,0.9992,0.9987,0.9998
+prueba_limpia,gente con armas en la quebrada!!,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9519,0.9835,0.4701,0.9844
+prueba_limpia,se escucharon tiros cerca del campamento,emergencia_seguridad,reportar_alerta,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.4464,0.5249,0.9543,0.7809
+prueba_limpia,tenemos un herido,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.5661,0.9729,0.996,0.9991
+prueba_limpia,emergencia urgente,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,reportar_alerta,emergencia_seguridad,0.9852,0.9799,0.2035,0.9926
+prueba_limpia,nos quieren agredir,emergencia_seguridad,despedida,despedida,ayuda_capacidades,emergencia_seguridad,0.4338,0.7763,0.3514,0.9519
+prueba_limpia,retuvieron al topógrafo,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.7632,0.8766,0.9994,0.9917
+prueba_limpia,hay violencia en el lindero,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9907,0.987,0.9826,0.9996
+prueba_limpia,personas atrapadas en la mina,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9527,0.7035,0.7824,0.9905
+prueba_limpia,dispararon al vigilante,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9442,0.9794,0.9941,0.9992
+prueba_limpia,amenazas contra el personal de campo,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9977,0.9755,0.7732,0.9956
+prueba_limpia,nos asaltaron en la vía,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9955,0.85,0.9972,0.9998
+prueba_limpia,accidente con lesionados,emergencia_seguridad,emergencia_seguridad,hablar_humano,hablar_humano,emergencia_seguridad,0.7294,0.4814,0.2835,0.999
+prueba_limpia,"peligro, hay armados",emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9874,0.9548,0.9919,0.9998
+prueba_limpia,incendio en la bodega,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.8036,0.8796,0.9749,0.9982
+prueba_limpia,nos atacaron,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9682,0.987,0.982,0.9983
+prueba_limpia,enfrentamiento en la concesión,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.6496,0.8928,0.6045,0.7775
+prueba_limpia,un compañero desaparecido en campo,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,hablar_humano,hablar_humano,0.6033,0.2367,0.3475,0.3742
+prueba_limpia,"nos amenazan, auxilio",emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.8736,0.6939,0.8043,0.9987
+prueba_limpia,precio del cobre en la bolsa de Londres,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,0.876,0.9968,0.5579,0.961
+prueba_limpia,¿quién juega hoy en la liga?,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,0.7895,0.9311,0.9922,0.9534
+prueba_limpia,dime algo gracioso,fuera_alcance,despedida,fuera_alcance,consultar_concesion,fuera_alcance,0.8351,0.3033,0.8212,0.9504
+prueba_limpia,receta de bolón de verde,fuera_alcance,fuera_alcance,fuera_alcance,solicitar_cartografia,fuera_alcance,0.7797,0.9246,0.72,0.9946
+prueba_limpia,¿cuándo me depositan el sueldo?,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,0.9517,0.9972,0.9993,0.9997
+prueba_limpia,¿me recomiendas una serie?,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,0.81,0.4591,0.5761,0.8561
+prueba_limpia,¿cómo estará el tráfico en la vía a Machala?,fuera_alcance,emergencia_seguridad,fuera_alcance,fuera_alcance,fuera_alcance,0.5751,0.8547,0.7444,0.9856
+prueba_limpia,escríbeme una canción,fuera_alcance,reportar_alerta,fuera_alcance,ayuda_capacidades,fuera_alcance,0.4089,0.4705,0.5252,0.9924
+prueba_limpia,¿qué es la vida?,fuera_alcance,consulta_geodesia,consulta_geodesia,fuera_alcance,fuera_alcance,0.9972,0.6436,0.5319,0.6408
+prueba_limpia,quiero vacaciones la próxima semana,fuera_alcance,fuera_alcance,fuera_alcance,consultar_concesion,solicitar_vuelo,0.4643,0.7891,0.2812,0.8292
+prueba_limpia,traduce hello world,fuera_alcance,fuera_alcance,despedida,consultar_concesion,convertir_coordenadas,0.5318,0.2991,0.6944,0.4317
+prueba_limpia,¿cómo cambio la clave del wifi?,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,0.8331,0.9903,0.9025,0.8893
+prueba_limpia,¿cuál es el mejor celular?,fuera_alcance,consulta_geodesia,consulta_geodesia,fuera_alcance,consulta_geodesia,0.8844,0.5156,0.9653,0.647
+prueba_limpia,¿cuánto pesa un elefante?,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,0.8867,0.9696,0.9982,0.9974
+prueba_limpia,pídeme comida a domicilio,fuera_alcance,fuera_alcance,hablar_humano,fuera_alcance,fuera_alcance,0.488,0.2794,0.9825,0.9964
+prueba_limpia,¿qué feriados hay en diciembre?,fuera_alcance,reportar_alerta,consulta_geodesia,ayuda_capacidades,fuera_alcance,0.374,0.8379,0.3941,0.5163
+prueba_limpia,solicitud de anticipo de sueldo,fuera_alcance,estado_solicitud,fuera_alcance,fuera_alcance,fuera_alcance,0.382,0.8048,0.5242,0.9824
+prueba_limpia,¿el oro va a subir de precio?,fuera_alcance,fuera_alcance,fuera_alcance,emergencia_seguridad,fuera_alcance,0.8738,0.9502,0.5112,0.5927
+prueba_ruido,buenos dias kuribbot,saludo,saludo,saludo,saludo,saludo,0.999,0.9892,0.9879,0.9994
+prueba_ruido,hola hola,saludo,saludo,saludo,saludo,saludo,1.0,0.9982,0.9995,0.9996
+prueba_ruido,muy buuenas tardes,saludo,saludo,saludo,saludo,saludo,0.9612,0.8726,0.9183,0.9988
+prueba_ruido,holaaa buen dia,saludo,saludo,saludo,saludo,saludo,0.9997,0.7177,0.9959,0.9996
+prueba_ruido,saludos dedse el campamento sur,saludo,saludo,saludo,saludo,saludo,0.8507,0.9585,0.6247,0.9946
+prueba_ruido,hola q tal,saludo,saludo,saludo,saludo,saludo,1.0,0.997,0.9948,0.9996
+prueba_ruido,"buenas, todo bien?",saludo,saludo,saludo,saludo,saludo,0.9956,0.9748,0.9869,0.9978
+prueba_ruido,"hola, pirmer dia usando esto",saludo,saludo,saludo,saludo,saludo,0.9972,0.9902,0.9283,0.9962
+prueba_ruido,buen dia compañero,saludo,saludo,saludo,saludo,saludo,0.9831,0.8086,0.9996,0.9983
+prueba_ruido,ey hola,saludo,saludo,saludo,despedida,saludo,1.0,0.9898,0.5977,0.9993
+prueba_ruido,buenas noches asistente,saludo,saludo,saludo,saludo,saludo,0.9978,0.9949,0.9881,0.9997
+prueba_ruido,"hola, estsa disponible?",saludo,saludo,saludo,saludo,saludo,0.9942,0.974,0.8876,0.9874
+prueba_ruido,"saludos, soy nuevo en geomtáica",saludo,saludo,saludo,saludo,saludo,0.9935,0.9862,0.6604,0.5455
+prueba_ruido,"qué hubo, bueenas",saludo,saludo,consulta_geodesia,saludo,saludo,0.4147,0.4377,0.3995,0.9816
+prueba_ruido,hola de parte de seguridad,saludo,saludo,saludo,saludo,saludo,0.8664,0.9804,0.3441,0.9988
+prueba_ruido,buebas tardes a todos,saludo,saludo,saludo,saludo,saludo,0.9399,0.5461,0.2632,0.9991
+prueba_ruido,hola otra vez,saludo,saludo,saludo,saludo,saludo,0.9998,0.9918,0.9636,0.9997
+prueba_ruido,"buen dia, q tal la mañana?",saludo,saludo,saludo,saludo,saludo,0.9954,0.7683,0.5753,0.9972
+prueba_ruido,grax,despedida,despedida,despedida,saludo,ayuda_capacidades,0.7598,0.2528,0.9067,0.998
+prueba_ruido,mchas gracias por todo,despedida,despedida,despedida,despedida,despedida,0.9999,0.9983,0.9805,0.999
+prueba_ruido,"ya, chao",despedida,despedida,despedida,despedida,despedida,0.9992,0.9968,0.9996,0.9997
+prueba_ruido,nos vemos mañana,despedida,despedida,despedida,despedida,despedida,0.9941,0.9918,0.9964,0.9978
+prueba_ruido,"listo eso era, bye",despedida,despedida,despedida,despedida,despedida,0.998,0.9948,0.9912,0.9994
+prueba_ruido,gracias crack,despedida,despedida,despedida,saludo,despedida,0.9999,0.9953,0.6125,0.999
+prueba_ruido,"ok, haasta otra",despedida,despedida,despedida,despedida,despedida,0.9078,0.9411,0.9812,0.8472
+prueba_ruido,"muy amable, me retiro",despedida,despedida,despedida,despedida,despedida,0.69,0.731,0.9731,0.9989
+prueba_ruido,agraedcido con la ayuda,despedida,ayuda_capacidades,hablar_humano,despedida,emergencia_seguridad,0.5683,0.7975,0.4583,0.8179
+prueba_ruido,adios kueibot,despedida,despedida,despedida,saludo,despedida,0.9946,0.2543,0.3371,0.6122
+prueba_ruido,"ya termine, gracias",despedida,despedida,despedida,despedida,despedida,0.9999,0.9972,0.9992,0.9995
+prueba_ruido,perfecto mil gracias,despedida,despedida,despedida,despedida,despedida,0.9997,0.9932,0.9929,0.9994
+prueba_ruido,hastta la vista,despedida,consultar_concesion,consultar_concesion,saludo,despedida,0.745,0.3357,0.4013,0.7129
+prueba_ruido,eso seria todo,despedida,despedida,despedida,despedida,despedida,0.955,0.9788,0.6809,0.9951
+prueba_ruido,"bienas noches, ya me voy",despedida,despedida,saludo,despedida,despedida,0.3999,0.5007,0.9889,0.9983
+prueba_ruido,"chevere, graciaas",despedida,despedida,despedida,consultar_concesion,despedida,0.9714,0.2543,0.2313,0.9961
+prueba_ruido,"listo, cerramos",despedida,despedida,despedida,despedida,despedida,0.8408,0.7269,0.9909,0.994
+prueba_ruido,"gracias, quedo atento",despedida,despedida,despedida,despedida,despedida,0.9965,0.9929,0.9947,0.9996
+prueba_ruido,q puwdes hacer,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9898,0.8325,0.6322,0.997
+prueba_ruido,ayudaaa,ayuda_capacidades,ayuda_capacidades,despedida,despedida,ayuda_capacidades,0.8899,0.2528,0.5807,0.8824
+prueba_ruido,cual es tu alcance?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.6751,0.9427,0.9914,0.9987
+prueba_ruido,enseñaame a usarte,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9336,0.913,0.8547,0.9626
+prueba_ruido,qué servicios tienes?,ayuda_capacidades,ayuda_capacidades,consulta_geodesia,ayuda_capacidades,ayuda_capacidades,0.6726,0.4377,0.9792,0.9901
+prueba_ruido,opciones porfa,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9961,0.9901,0.3947,0.984
+prueba_ruido,tiense un menu?,ayuda_capacidades,ayuda_capacidades,fuera_alcance,consultar_concesion,estado_solicitud,0.9276,0.7724,0.2523,0.4313
+prueba_ruido,que consults aceptas?,ayuda_capacidades,ayuda_capacidades,despedida,ayuda_capacidades,ayuda_capacidades,0.6904,0.5844,0.9697,0.7982
+prueba_ruido,"soy nuevo, como funcionas?",ayuda_capacidades,ayuda_capacidades,saludo,ayuda_capacidades,ayuda_capacidades,0.7546,0.5311,0.862,0.9958
+prueba_ruido,para que te crearon?,ayuda_capacidades,ayuda_capacidades,despedida,ayuda_capacidades,ayuda_capacidades,0.9319,0.6154,0.8999,0.8284
+prueba_ruido,dame las opciones del asostente,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,hablar_humano,estado_solicitud,0.9853,0.8611,0.2329,0.3136
+prueba_ruido,q pedo pedirte?,ayuda_capacidades,fuera_alcance,despedida,saludo,ayuda_capacidades,0.5164,0.2502,0.5663,0.9961
+prueba_ruido,moostrar ayuda,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,verificar_punto,fuera_alcance,0.9962,0.9684,0.8106,0.3237
+prueba_ruido,en que tems eres bueno?,ayuda_capacidades,consulta_geodesia,reportar_alerta,ayuda_capacidades,ayuda_capacidades,0.4198,0.5237,0.8948,0.7992
+prueba_ruido,como se usa esto?,ayuda_capacidades,ayuda_capacidades,hablar_humano,ayuda_capacidades,ayuda_capacidades,0.5063,0.4389,0.9303,0.4573
+prueba_ruido,quiro ver qué haces,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9919,0.9963,0.8594,0.9986
+prueba_ruido,que funciones tiene el bot?,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,consultar_concesion,ayuda_capacidades,0.9901,0.9757,0.4494,0.865
+prueba_ruido,explica tus funcinoes,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,ayuda_capacidades,0.9925,0.9119,0.7621,0.9875
+prueba_ruido,esatdo de cerro azul porfa,consultar_concesion,consultar_concesion,solicitar_cartografia,solicitar_cartografia,consultar_concesion,0.7955,0.3479,0.2828,0.8954
+prueba_ruido,CM-104 siuge vigente?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.979,0.905,0.7289,0.9978
+prueba_ruido,ficha de El Roble,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9648,0.9784,0.9244,0.9822
+prueba_ruido,neesito la info catastral de la El Roble,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9983,0.9896,0.9521,0.998
+prueba_ruido,cuanto mide la concesuon los laureles?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9539,0.8459,0.9919,0.9962
+prueba_ruido,la CM-106 está suspendida?,consultar_concesion,consultar_concesion,consultar_concesion,verificar_punto,consultar_concesion,0.9767,0.9453,0.4559,0.9265
+prueba_ruido,revidame la concesion CM-102,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9996,0.8498,0.9938,0.9959
+prueba_ruido,que fase tienne la Los Laureles?,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9932,0.8604,0.8973,0.9894
+prueba_ruido,quierro ver los datos del area CM-101,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.973,0.9717,0.4692,0.9772
+prueba_ruido,titluar y estado de los laureles,consultar_concesion,consultar_concesion,hablar_humano,consultar_concesion,consultar_concesion,0.7813,0.2608,0.6306,0.91
+prueba_ruido,dime si Cerro Azul está actia,consultar_concesion,consultar_concesion,consultar_concesion,verificar_punto,consultar_concesion,0.643,0.9519,0.6468,0.9694
+prueba_ruido,cuál es la suerficie concesionada de los laureles?,consultar_concesion,consultar_concesion,consultar_concesion,consulta_geodesia,consultar_concesion,0.9873,0.755,0.2845,0.842
+prueba_ruido,datos del derecho minero CM-104,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9925,0.9949,0.946,0.9963
+prueba_ruido,consultar concseion,consultar_concesion,consultar_concesion,ayuda_capacidades,consultar_concesion,estado_solicitud,0.8528,0.3663,0.4809,0.9618
+prueba_ruido,a q campaento corresponde la ventana?,consultar_concesion,consultar_concesion,reportar_alerta,consulta_geodesia,consultar_concesion,0.562,0.377,0.9352,0.9947
+prueba_ruido,situacion atual de la concesion Los Laureles,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.999,0.5659,0.8126,0.9904
+prueba_ruido,resumen catastral de El Roble,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.9952,0.9744,0.9613,0.9953
+prueba_ruido,cerro azul sta en tramite?,consultar_concesion,consultar_concesion,reportar_alerta,consultar_concesion,consultar_concesion,0.4543,0.5938,0.7639,0.8614
+prueba_ruido,-3.0601 -79.7215 esta dentro?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9997,0.6842,0.9315,0.9926
+prueba_ruido,ese puntto 643990 9661010 psad56 es nuestro?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.6014,0.4397,0.8596,0.9846
+prueba_ruido,chequea E 642600 N 9662480 PSAD56 contra el catatsro,verificar_punto,convertir_coordenadas,verificar_punto,convertir_coordenadas,verificar_punto,0.5058,0.818,0.7344,0.9634
+prueba_ruido,la coordenada 640500 9665200 wgs84 cae en la concesioon o fuera?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9506,0.9796,0.9677,0.9925
+prueba_ruido,"doonde queda -3.0512, -79.7301",verificar_punto,verificar_punto,verificar_punto,verificar_punto,convertir_coordenadas,0.7948,0.6073,0.5398,0.5941
+prueba_ruido,643990 9661010 psad56 inavde alguna concesion de terceros?,verificar_punto,verificar_punto,convertir_coordenadas,verificar_punto,verificar_punto,0.9434,0.5653,0.3304,0.9692
+prueba_ruido,"verfica ubicación del hito 642350, 9662120",verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9947,0.9408,0.9603,0.999
+prueba_ruido,a cuantos metros del limite esta 643990 9661010 psad56?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.8477,0.9146,0.6984,0.9965
+prueba_ruido,confirma si E 641100 N 9664950 WGS84 cae en area minera,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9565,0.9478,0.9878,0.9989
+prueba_ruido,"tego esta posición lat -3.0455 lon -79.7262, a qué concesión corresponde?",verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9949,0.8188,0.8963,0.9953
+prueba_ruido,el caampamento en 640500 9665200 wgs84 esta dentro del lindero?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9995,0.965,0.9845,0.9922
+prueba_ruido,revvisar si un punto esta dentro,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.991,0.8313,0.9567,0.3594
+prueba_ruido,uibcame E 642600 N 9662480 PSAD56,verificar_punto,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,verificar_punto,0.9423,0.4813,0.6536,0.9241
+prueba_ruido,643990 9661010 psad56 sta cerac de un area protegida?,verificar_punto,verificar_punto,convertir_coordenadas,convertir_coordenadas,verificar_punto,0.6307,0.456,0.4072,0.9949
+prueba_ruido,comprobar coprdenada en poligono,verificar_punto,verificar_punto,fuera_alcance,verificar_punto,convertir_coordenadas,0.5984,0.2206,0.278,0.691
+prueba_ruido,640500 9665200 wgs84 quedda dentro del area concesionada?,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.9971,0.8387,0.9619,0.9974
+prueba_ruido,conulta si E 641100 N 9664950 WGS84 pertenece a la empresa,verificar_punto,verificar_punto,verificar_punto,verificar_punto,verificar_punto,0.8456,0.7948,0.9567,0.9862
+prueba_ruido,la plqtaforma en E 641100 N 9664950 WGS84 esta en regla?,verificar_punto,verificar_punto,verificar_punto,convertir_coordenadas,verificar_punto,0.7804,0.6989,0.6592,0.9313
+prueba_ruido,"pasame 642350, 9662120 a wgs84",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9982,0.9612,0.9868,0.9964
+prueba_ruido,connvierteme -3.0601 -79.7215,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.8913,0.4478,0.461,0.9717
+prueba_ruido,lat -3.0455 lon -79.7262 a geograficas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9972,0.9399,0.794,0.997
+prueba_ruido,necesito 646900 9660300 en psad 56,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,verificar_punto,0.8944,0.888,0.9577,0.8406
+prueba_ruido,"transforma de psad a wgs las coordenadas E: 645210, N: 9663790",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9988,0.9832,0.989,0.9977
+prueba_ruido,me das -3.0601 -79.7215 en lat long?,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9469,0.475,0.9169,0.7553
+prueba_ruido,reproyectar E 641100 N 9664950 WGS84,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,verificar_punto,convertir_coordenadas,0.9646,0.4321,0.4474,0.8103
+prueba_ruido,convertir coordenadas porfa,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.999,0.9823,0.9831,0.9956
+prueba_ruido,"cambia E: 645210, N: 9663790 a utm 17s",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9965,0.9911,0.9581,0.9958
+prueba_ruido,"cuál es el equivalenre de 642350, 9662120 en wgs 84?",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,consulta_geodesia,convertir_coordenadas,0.5004,0.4579,0.6695,0.9814
+prueba_ruido,de utm a geograficas: -3.0601 -79.7215,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9985,0.9353,0.9729,0.9929
+prueba_ruido,"quiero 3°03'04""S 79°43'48""W en grados decimales",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9919,0.974,0.8632,0.9978
+prueba_ruido,transformación de datum para E 641100 N 9664950 WGS84,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9991,0.9575,0.9942,0.9962
+prueba_ruido,convertir punto a otro sistema de coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,hablar_humano,convertir_coordenadas,0.9969,0.9936,0.6315,0.9898
+prueba_ruido,"como se exprrsa -3.0512, -79.7301 en psad56?",convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9697,0.8366,0.9706,0.9799
+prueba_ruido,E 641100 N 9664950 WGS84 a siras,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.9575,0.9346,0.9587,0.9417
+prueba_ruido,dame E 641100 N 9664950 WGS84 convertido,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,verificar_punto,0.993,0.4407,0.9386,0.6424
+prueba_ruido,conversión geodséica de x=644800 y=9661500,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,convertir_coordenadas,0.8874,0.9165,0.7588,0.9964
+prueba_ruido,hay mnieros ilegales en CM-102,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9932,0.9628,0.9689,0.9964
+prueba_ruido,viron una excavadora rara en san gregorio,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9683,0.7161,0.8153,0.9658
+prueba_ruido,alerta! gente trabajando sin permiso en san gregorio,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.995,0.9835,0.6618,0.7959
+prueba_ruido,quuiero denunciar una invasion,reportar_alerta,reportar_alerta,fuera_alcance,reportar_alerta,hablar_humano,0.9588,0.4735,0.6168,0.3604
+prueba_ruido,el rio esta turbio y sospechamos de CM-102,reportar_alerta,reportar_alerta,solicitar_cartografia,solicitar_cartografia,reportar_alerta,0.6506,0.7606,0.4557,0.9464
+prueba_ruido,se oyen explosiones de noche por CM-103,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.759,0.4531,0.985,0.9926
+prueba_ruido,aparwcio un camino nuevo en cerro azul,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,reportar_alerta,0.7399,0.366,0.355,0.9768
+prueba_ruido,reportar actividsd no autorizada,reportar_alerta,reportar_alerta,reportar_alerta,convertir_coordenadas,estado_solicitud,0.9959,0.9301,0.5122,0.4334
+prueba_ruido,hay un desborce raro en la imagen de cerro azul,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,reportar_alerta,0.8886,0.8717,0.7477,0.989
+prueba_ruido,infornales metidos en peña blanca,reportar_alerta,reportar_alerta,reportar_alerta,saludo,reportar_alerta,0.914,0.6152,0.2409,0.6623
+prueba_ruido,la comunidad avisa de volquetas en San Gregorio,reportar_alerta,consultar_concesion,reportar_alerta,reportar_alerta,reportar_alerta,0.5904,0.5769,0.4846,0.9815
+prueba_ruido,encontramos labores clandestinas en el roble,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.9585,0.835,0.9499,0.9966
+prueba_ruido,hay una draga en el rio dentro de CM-106,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,reportar_alerta,0.9869,0.9552,0.5082,0.9866
+prueba_ruido,sospehca de extraccion ilegal en CM-106,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.995,0.8013,0.4724,0.9024
+prueba_ruido,reegistrar una intrusion en el lindero,reportar_alerta,reportar_alerta,reportar_alerta,emergencia_seguridad,reportar_alerta,0.9623,0.325,0.457,0.8891
+prueba_ruido,hay movimiento de tierra no autorizado en Los Laureles,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.979,0.9474,0.8604,0.9874
+prueba_ruido,reporte de invasion minear,reportar_alerta,reportar_alerta,solicitar_cartografia,reportar_alerta,reportar_alerta,0.9541,0.259,0.3613,0.9364
+prueba_ruido,vimos un campamento de infoormales en CM-106,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,reportar_alerta,0.978,0.956,0.2754,0.9944
+prueba_ruido,mandsme el dron a cerro azul,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_cartografia,solicitar_vuelo,0.9903,0.933,0.3475,0.9906
+prueba_ruido,ocupo un vuelo en peña blanca mañana,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9754,0.933,0.6255,0.9949
+prueba_ruido,agenda drrone para San Gregorio,solicitar_vuelo,solicitar_vuelo,consultar_concesion,consultar_concesion,consultar_concesion,0.628,0.2974,0.7289,0.9506
+prueba_ruido,pueden sorbevolar CM-102?,solicitar_vuelo,solicitar_vuelo,solicitar_cartografia,hablar_humano,verificar_punto,0.908,0.3756,0.4345,0.4912
+prueba_ruido,vuelo de inspeccion el 12 de noviembre,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9999,0.9751,0.962,0.9747
+prueba_ruido,necessito una ortofoto nueva de los laureles,solicitar_vuelo,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.5056,0.5669,0.7018,0.4485
+prueba_ruido,solicitud de sobrevuelo,solicitar_vuelo,solicitar_vuelo,estado_solicitud,estado_solicitud,consulta_geodesia,0.7466,0.4574,0.6731,0.2961
+prueba_ruido,esta lirbe el dron hoy?,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9682,0.9195,0.2736,0.9972
+prueba_ruido,prograamar vuelo fotogrametrico en CM-104,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9951,0.9577,0.9031,0.994
+prueba_ruido,inspección aérea en San Gregorio urgetne,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,consultar_concesion,solicitar_vuelo,0.9841,0.9849,0.5597,0.8909
+prueba_ruido,quiero volar el dron sobre la reñavera de san gregorio,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.997,0.9925,0.5205,0.9982
+prueba_ruido,reserva un vulo para el lunes,solicitar_vuelo,solicitar_vuelo,fuera_alcance,solicitar_vuelo,solicitar_vuelo,0.7114,0.5764,0.7649,0.923
+prueba_ruido,vueelo rpas en el roble,solicitar_vuelo,solicitar_vuelo,reportar_alerta,despedida,hablar_humano,0.884,0.4979,0.3296,0.5145
+prueba_ruido,necesito imagense con dron del lindero de Los Laureles,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.8059,0.9693,0.5854,0.697
+prueba_ruido,me progrraman un vuelo?,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,reportar_alerta,emergencia_seguridad,0.9259,0.7798,0.4057,0.3996
+prueba_ruido,sobrevuelo de verificaicon en CM-101 pasado mañana,solicitar_vuelo,solicitar_vuelo,reportar_alerta,solicitar_vuelo,solicitar_vuelo,0.9579,0.6104,0.9951,0.9955
+prueba_ruido,vuelo para cubicar el stock de el roble,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,0.9873,0.9879,0.7105,0.8701
+prueba_ruido,dron a peña blanca porrfa,solicitar_vuelo,solicitar_vuelo,solicitar_vuelo,convertir_coordenadas,consultar_concesion,0.6977,0.9086,0.3013,0.7391
+prueba_ruido,mapa de la ventana prfa,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,consultar_concesion,solicitar_cartografia,0.9978,0.9755,0.491,0.9709
+prueba_ruido,me evnías el kmz de CM-101?,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9897,0.792,0.959,0.9176
+prueba_ruido,ocupo el shape de lideros,solicitar_cartografia,solicitar_cartografia,fuera_alcance,solicitar_cartografia,hablar_humano,0.9667,0.5573,0.7701,0.4561
+prueba_ruido,necesito modelo digital de elevación de El Roble urgente,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9584,0.9701,0.4998,0.9901
+prueba_ruido,quiero un palno de el roble,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9493,0.762,0.9511,0.4682
+prueba_ruido,solivitar mapa topografico,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,hablar_humano,solicitar_cartografia,0.9934,0.8426,0.489,0.8661
+prueba_ruido,me haven un mapa de ubicacion?,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9959,0.9699,0.8776,0.7998
+prueba_ruido,cuvas de nivel de CM-103,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9754,0.9164,0.2235,0.7102
+prueba_ruido,dame el ortofoto de la San Gregorio,solicitar_cartografia,consultar_concesion,solicitar_cartografia,consultar_concesion,consultar_concesion,0.7273,0.5553,0.8767,0.854
+prueba_ruido,requiero un mapa para el informe mensual,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9987,0.981,0.9829,0.9964
+prueba_ruido,necesto la cartografia base del campamento Norte,solicitar_cartografia,solicitar_cartografia,consulta_geodesia,solicitar_cartografia,solicitar_cartografia,0.9719,0.4476,0.735,0.9903
+prueba_ruido,exportar poligobo de El Roble a kml,solicitar_cartografia,reportar_alerta,solicitar_cartografia,solicitar_vuelo,solicitar_vuelo,0.3154,0.3744,0.9323,0.8708
+prueba_ruido,mapa teematico de cobertura de Los Laureles,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9867,0.985,0.7102,0.9855
+prueba_ruido,teinen el mdt de el roble?,solicitar_cartografia,consultar_concesion,consultar_concesion,consultar_concesion,consultar_concesion,0.6527,0.4781,0.4176,0.8862
+prueba_ruido,pllano en pdf de la ventana,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_vuelo,estado_solicitud,0.7823,0.6149,0.3013,0.5711
+prueba_ruido,pedir cartografia nuueva,solicitar_cartografia,solicitar_cartografia,fuera_alcance,consultar_concesion,estado_solicitud,0.7188,0.2939,0.8778,0.5422
+prueba_ruido,mapa de accesos a Cerro Azul,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9972,0.9694,0.9573,0.9957
+prueba_ruido,necesito la capa de hittos,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,0.9776,0.8646,0.4289,0.4371
+prueba_ruido,como va GEO-2026-0412,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9994,0.9506,0.8759,0.9706
+prueba_ruido,estaado GEO-2026-0415,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,1.0,0.939,0.7117,0.9852
+prueba_ruido,ya está mi ticket?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9999,0.9854,0.9892,0.9886
+prueba_ruido,seguimiento GEO-2026-0419 porfa,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9985,0.9668,0.9407,0.9955
+prueba_ruido,q paso con GEO-2026-0430?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9992,0.9579,0.6034,0.9916
+prueba_ruido,ya me atendiron el pedido?,estado_solicitud,estado_solicitud,estado_solicitud,emergencia_seguridad,hablar_humano,0.2614,0.6438,0.5708,0.4323
+prueba_ruido,cuadno estara listo GEO-2026-0419?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9993,0.9378,0.3347,0.9878
+prueba_ruido,revisar mi solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9963,0.981,0.732,0.9733
+prueba_ruido,nivedades del caso GEO-2026-0419,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9958,0.9811,0.3451,0.9954
+prueba_ruido,mi vueol ya esta programado?,estado_solicitud,estado_solicitud,despedida,despedida,estado_solicitud,0.8101,0.4578,0.3406,0.9236
+prueba_ruido,GEO-2026-0415 ya se cerro?,estado_solicitud,estado_solicitud,estado_solicitud,despedida,estado_solicitud,0.9997,0.9024,0.5999,0.9394
+prueba_ruido,estatus de mi requreimiento,estado_solicitud,estado_solicitud,fuera_alcance,estado_solicitud,estado_solicitud,0.955,0.913,0.9979,0.5353
+prueba_ruido,quine tiene asignado GEO-2026-0423?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9961,0.9768,0.9473,0.9975
+prueba_ruido,hay avacnes con GEO-2026-0415?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9954,0.9753,0.4245,0.9837
+prueba_ruido,consultar ticcket,estado_solicitud,estado_solicitud,ayuda_capacidades,estado_solicitud,estado_solicitud,0.972,0.3804,0.5746,0.9961
+prueba_ruido,en qué va mi pedido de mapa?,estado_solicitud,estado_solicitud,estado_solicitud,consulta_geodesia,consulta_geodesia,0.2981,0.7548,0.7848,0.7583
+prueba_ruido,quiero saber el estaod de GEO-2026-0423,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.9995,0.9753,0.9882,0.9987
+prueba_ruido,ya revisarron mi alerta?,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,estado_solicitud,0.8464,0.386,0.8375,0.8052
+prueba_ruido,psad56 vs wgs84 cual es la diferencia,consulta_geodesia,consulta_geodesia,consulta_geodesia,convertir_coordenadas,consulta_geodesia,0.9991,0.9673,0.2717,0.5522
+prueba_ruido,que epsg es wgs84 utm 17s?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9911,0.9481,0.5821,0.9056
+prueba_ruido,cual es el sistema de referencia oficial del pais?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9959,0.9325,0.7837,0.9937
+prueba_ruido,explícame qué es srgas,consulta_geodesia,ayuda_capacidades,consulta_geodesia,ayuda_capacidades,ayuda_capacidades,0.5187,0.881,0.4944,0.8934
+prueba_ruido,por q el punto me sale corriido en el mapa?,consulta_geodesia,solicitar_cartografia,solicitar_cartografia,solicitar_cartografia,hablar_humano,0.6201,0.3433,0.1945,0.2688
+prueba_ruido,que tan preciso es el gps de mano?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9732,0.8791,0.8701,0.9392
+prueba_ruido,q es rtk?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,estado_solicitud,0.6211,0.5344,0.9651,0.527
+prueba_ruido,en que formato entrego la cartografia?,consulta_geodesia,solicitar_cartografia,reportar_alerta,solicitar_cartografia,solicitar_cartografia,0.8338,0.3096,0.5169,0.9318
+prueba_ruido,q reglas hay para volar dron?,consulta_geodesia,solicitar_vuelo,solicitar_vuelo,ayuda_capacidades,consulta_geodesia,0.987,0.9815,0.4291,0.557
+prueba_ruido,cuántos metros camba de psad a wgs?,consulta_geodesia,fuera_alcance,consulta_geodesia,convertir_coordenadas,solicitar_vuelo,0.5133,0.7812,0.3976,0.7588
+prueba_ruido,q es la zona 17 sur?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.7501,0.7986,0.332,0.6746
+prueba_ruido,qué es un datum?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9985,0.9926,0.9985,0.9989
+prueba_ruido,qué datps debe tener un reporte de alerta?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.4514,0.7581,0.9973,0.989
+prueba_ruido,cuanto se demora un mapa?,consulta_geodesia,solicitar_cartografia,solicitar_cartografia,consulta_geodesia,consulta_geodesia,0.4278,0.8991,0.6379,0.739
+prueba_ruido,diferencia entre altura del gps y altura sobre el nivel del mar,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9749,0.9261,0.6521,0.8411
+prueba_ruido,qué es una ortoftoo y para qué sirve?,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,consulta_geodesia,0.9102,0.9952,0.9829,0.9966
+prueba_ruido,que es el codigo epsg?,consulta_geodesia,consulta_geodesia,consultar_concesion,consulta_geodesia,consulta_geodesia,0.9809,0.5323,0.742,0.8347
+prueba_ruido,como identifico el datum de unas coordenadas?,consulta_geodesia,convertir_coordenadas,convertir_coordenadas,solicitar_cartografia,solicitar_cartografia,0.97,0.7604,0.9125,0.6276
+prueba_ruido,una persona porfa,hablar_humano,hablar_humano,hablar_humano,despedida,hablar_humano,0.9586,0.7515,0.2648,0.7418
+prueba_ruido,quiero un hunano,hablar_humano,hablar_humano,fuera_alcance,fuera_alcance,hablar_humano,0.6886,0.4893,0.5492,0.5621
+prueba_ruido,paasame con tu supervisor,hablar_humano,hablar_humano,ayuda_capacidades,hablar_humano,hablar_humano,0.9273,0.571,0.9866,0.998
+prueba_ruido,me cmunicas con geomatica?,hablar_humano,hablar_humano,hablar_humano,ayuda_capacidades,hablar_humano,0.9024,0.9102,0.4472,0.947
+prueba_ruido,necesito un anakista real,hablar_humano,hablar_humano,fuera_alcance,hablar_humano,hablar_humano,0.5787,0.5901,0.9824,0.9905
+prueba_ruido,detivame con un tecnico,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.99,0.9417,0.996,0.9995
+prueba_ruido,que me llame alugien del area,hablar_humano,hablar_humano,fuera_alcance,verificar_punto,hablar_humano,0.6491,0.5573,0.4948,0.6496
+prueba_ruido,quiero atencion peronalizada,hablar_humano,hablar_humano,despedida,verificar_punto,hablar_humano,0.81,0.2319,0.2918,0.6419
+prueba_ruido,operador potfa,hablar_humano,hablar_humano,hablar_humano,consultar_concesion,estado_solicitud,0.2537,0.2325,0.7458,0.3574
+prueba_ruido,"esto no lo resuelves tu, pasame con alguien",hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9885,0.711,0.8443,0.969
+prueba_ruido,contacto con un especialista en cstastro,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9992,0.9362,0.4101,0.9975
+prueba_ruido,esvalar a un humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9966,0.9946,0.9815,0.9787
+prueba_ruido,puedo hblar con el ingeniero de turno?,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9543,0.9793,0.7188,0.9959
+prueba_ruido,quiero que lo revise una perrsona,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9652,0.8376,0.8235,0.9887
+prueba_ruido,cimunicarme con el area legal,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.3483,0.8089,0.9128,0.9277
+prueba_ruido,no quieor hablar con un bot,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9988,0.9562,0.4265,0.9928
+prueba_ruido,conectame con soorte,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9653,0.8576,0.815,0.9659
+prueba_ruido,necesito hablar con el responsable,hablar_humano,hablar_humano,hablar_humano,hablar_humano,hablar_humano,0.9989,0.9992,0.9987,0.9998
+prueba_ruido,gente con arrmas en la quebrada!!,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,solicitar_cartografia,emergencia_seguridad,0.8077,0.4392,0.4015,0.4831
+prueba_ruido,se escucharon tirs cerca del campamento,emergencia_seguridad,reportar_alerta,emergencia_seguridad,emergencia_seguridad,reportar_alerta,0.4063,0.5249,0.9275,0.9595
+prueba_ruido,teenmos un herido,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.7617,0.7669,0.5221,0.9972
+prueba_ruido,emergencia urgemte,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,consultar_concesion,ayuda_capacidades,0.9742,0.7831,0.6804,0.7316
+prueba_ruido,nos quieten agredir,emergencia_seguridad,despedida,despedida,reportar_alerta,emergencia_seguridad,0.4925,0.7763,0.4282,0.7628
+prueba_ruido,retuvieron al topografo,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.7632,0.8766,0.9984,0.9892
+prueba_ruido,hay violencia en el linddero,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9913,0.9769,0.8524,0.9996
+prueba_ruido,persoonas atrapadas en la mina,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.8344,0.6199,0.6896,0.9909
+prueba_ruido,dispararon al vigulante,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,hablar_humano,emergencia_seguridad,0.9238,0.9794,0.9328,0.9963
+prueba_ruido,amenazas coontra el personal de campo,emergencia_seguridad,emergencia_seguridad,hablar_humano,hablar_humano,emergencia_seguridad,0.9926,0.524,0.6599,0.9722
+prueba_ruido,nos asalraron en la via,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9974,0.3155,0.9973,0.9998
+prueba_ruido,accidente con lesionados,emergencia_seguridad,emergencia_seguridad,hablar_humano,hablar_humano,emergencia_seguridad,0.7294,0.4814,0.2835,0.999
+prueba_ruido,"peligro, hay armados",emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.9874,0.9548,0.9919,0.9998
+prueba_ruido,incendio en la bodega,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,0.8036,0.8796,0.9749,0.9982
+prueba_ruido,nos aatcaron,emergencia_seguridad,emergencia_seguridad,despedida,emergencia_seguridad,emergencia_seguridad,0.9631,0.8353,0.9938,0.973
+prueba_ruido,enfrentqmiento en la concesion,emergencia_seguridad,consultar_concesion,fuera_alcance,consultar_concesion,consultar_concesion,0.6738,0.1913,0.3509,0.5579
+prueba_ruido,un cpmpañero desaparecido en campo,emergencia_seguridad,emergencia_seguridad,emergencia_seguridad,hablar_humano,reportar_alerta,0.6343,0.2367,0.8852,0.7048
+prueba_ruido,"nos amenazan, auxiñio",emergencia_seguridad,emergencia_seguridad,despedida,despedida,emergencia_seguridad,0.8758,0.7763,0.5254,0.9558
+prueba_ruido,precio del cobre en la bosla de londres,fuera_alcance,fuera_alcance,fuera_alcance,solicitar_cartografia,reportar_alerta,0.6243,0.9896,0.3814,0.409
+prueba_ruido,quiién juega hoy en la liga?,fuera_alcance,reportar_alerta,fuera_alcance,despedida,hablar_humano,0.333,0.3424,0.1739,0.6174
+prueba_ruido,dime algo gracioso,fuera_alcance,despedida,fuera_alcance,consultar_concesion,fuera_alcance,0.8351,0.3033,0.8212,0.9504
+prueba_ruido,receta de boón de verde,fuera_alcance,fuera_alcance,fuera_alcance,solicitar_cartografia,fuera_alcance,0.7368,0.9246,0.4922,0.9952
+prueba_ruido,cuando me drpositan el sueldo?,fuera_alcance,fuera_alcance,fuera_alcance,solicitar_cartografia,fuera_alcance,0.9113,0.9906,0.3926,0.9544
+prueba_ruido,me rexomiendas una serie?,fuera_alcance,fuera_alcance,fuera_alcance,ayuda_capacidades,hablar_humano,0.5616,0.4591,0.3864,0.4149
+prueba_ruido,cómo estará el ttáfico en la vía a machala?,fuera_alcance,emergencia_seguridad,fuera_alcance,consultar_concesion,solicitar_vuelo,0.7071,0.8547,0.5411,0.911
+prueba_ruido,escribeme una cancion,fuera_alcance,reportar_alerta,fuera_alcance,fuera_alcance,fuera_alcance,0.4089,0.4705,0.6792,0.9967
+prueba_ruido,qué es la vida?,fuera_alcance,consulta_geodesia,consulta_geodesia,consultar_concesion,ayuda_capacidades,0.9851,0.6436,0.6642,0.3996
+prueba_ruido,quiero vacaciones la proxima semana,fuera_alcance,fuera_alcance,fuera_alcance,consultar_concesion,solicitar_vuelo,0.4643,0.7891,0.2276,0.6988
+prueba_ruido,traduce hlelo world,fuera_alcance,fuera_alcance,despedida,consultar_concesion,estado_solicitud,0.6008,0.2991,0.3443,0.5948
+prueba_ruido,como cambio la clave del wifi?,fuera_alcance,fuera_alcance,fuera_alcance,consulta_geodesia,fuera_alcance,0.6456,0.8507,0.8024,0.885
+prueba_ruido,cual es el mjor celular?,fuera_alcance,consulta_geodesia,fuera_alcance,consulta_geodesia,consulta_geodesia,0.8813,0.3519,0.7415,0.9716
+prueba_ruido,cánto pesa un elefante?,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,fuera_alcance,0.4921,0.8073,0.3826,0.9334
+prueba_ruido,pídeme comida a domicilio,fuera_alcance,fuera_alcance,hablar_humano,fuera_alcance,fuera_alcance,0.488,0.2794,0.9825,0.9964
+prueba_ruido,q friados hay en diciembre?,fuera_alcance,reportar_alerta,emergencia_seguridad,saludo,fuera_alcance,0.4596,0.2961,0.3585,0.8613
+prueba_ruido,solicitud de antixipo de sueldo,fuera_alcance,estado_solicitud,fuera_alcance,emergencia_seguridad,solicitar_cartografia,0.3664,0.8048,0.3661,0.4583
+prueba_ruido,el oro va a subr de precio?,fuera_alcance,fuera_alcance,fuera_alcance,hablar_humano,consulta_geodesia,0.8874,0.9502,0.4528,0.3009

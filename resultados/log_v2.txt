@@ -1,0 +1,6 @@
+[TEST] M0 prueba_limpia: acc=0.909 F1=0.906 ECE 0.140->0.036
+[TEST] M0 prueba_ruido: acc=0.865 F1=0.861 ECE 0.150->0.069
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 29536.30it/s]
+[TEST] M3 prueba_limpia: acc=0.929 F1=0.929 ECE 0.066->0.042
+[TEST] M3 prueba_ruido: acc=0.873 F1=0.874 ECE 0.085->0.058
+Listo: /home/claude/kuribot/resultados/nlp_final_v2.json

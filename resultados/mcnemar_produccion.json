@@ -1,0 +1,26 @@
+{
+ "prueba_limpia": {
+  "M3v2_vs_M0v1": {
+   "solo_M3v2": 15,
+   "solo_M0v1": 14,
+   "p_valor": 1.0
+  },
+  "M3v2_vs_M3v1": {
+   "solo_M3v2": 11,
+   "solo_M3v1": 8,
+   "p_valor": 0.6476058959960938
+  }
+ },
+ "prueba_ruido": {
+  "M3v2_vs_M0v1": {
+   "solo_M3v2": 17,
+   "solo_M0v1": 20,
+   "p_valor": 0.7428293587290682
+  },
+  "M3v2_vs_M3v1": {
+   "solo_M3v2": 25,
+   "solo_M3v1": 9,
+   "p_valor": 0.00904118549078703
+  }
+ }
+}

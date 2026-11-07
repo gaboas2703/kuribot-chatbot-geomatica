@@ -1,0 +1,339 @@
+{
+ "type": "FeatureCollection",
+ "name": "base_sintetica_kuribot",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:EPSG::32717"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "CM-101",
+    "nombre": "Peña Blanca",
+    "fase": "explotación",
+    "estado": "vigente",
+    "campamento": "Norte",
+    "titular": "propia",
+    "capa": "concesion"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       641000,
+       9661500
+      ],
+      [
+       643000,
+       9661500
+      ],
+      [
+       643000,
+       9663000
+      ],
+      [
+       641000,
+       9663000
+      ],
+      [
+       641000,
+       9661500
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "CM-102",
+    "nombre": "San Gregorio",
+    "fase": "explotación",
+    "estado": "vigente",
+    "campamento": "Norte",
+    "titular": "propia",
+    "capa": "concesion"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       643000,
+       9662000
+      ],
+      [
+       644600,
+       9662000
+      ],
+      [
+       644600,
+       9663500
+      ],
+      [
+       643000,
+       9663500
+      ],
+      [
+       643000,
+       9662000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "CM-103",
+    "nombre": "La Ventana",
+    "fase": "exploración avanzada",
+    "estado": "vigente",
+    "campamento": "Central",
+    "titular": "propia",
+    "capa": "concesion"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       644600,
+       9660500
+      ],
+      [
+       647000,
+       9660500
+      ],
+      [
+       647000,
+       9662500
+      ],
+      [
+       644600,
+       9662500
+      ],
+      [
+       644600,
+       9660500
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "CM-104",
+    "nombre": "El Roble",
+    "fase": "exploración inicial",
+    "estado": "vigente (renovación en trámite)",
+    "campamento": "Central",
+    "titular": "propia",
+    "capa": "concesion"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       640000,
+       9664000
+      ],
+      [
+       641000,
+       9664000
+      ],
+      [
+       641000,
+       9665400
+      ],
+      [
+       640600,
+       9666000
+      ],
+      [
+       640000,
+       9666000
+      ],
+      [
+       640000,
+       9664000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "CM-105",
+    "nombre": "Cerro Azul",
+    "fase": "explotación",
+    "estado": "suspendida temporalmente",
+    "campamento": "Sur",
+    "titular": "propia",
+    "capa": "concesion"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       645500,
+       9663000
+      ],
+      [
+       646500,
+       9663000
+      ],
+      [
+       646500,
+       9664200
+      ],
+      [
+       645500,
+       9664200
+      ],
+      [
+       645500,
+       9663000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "CM-106",
+    "nombre": "Los Laureles",
+    "fase": "exploración inicial",
+    "estado": "vigente",
+    "campamento": "Sur",
+    "titular": "propia",
+    "capa": "concesion"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       646500,
+       9658500
+      ],
+      [
+       648500,
+       9658500
+      ],
+      [
+       648500,
+       9660500
+      ],
+      [
+       646500,
+       9660500
+      ],
+      [
+       646500,
+       9658500
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "CT-201",
+    "nombre": "Minas del Valle",
+    "fase": "explotación",
+    "estado": "vigente",
+    "campamento": "—",
+    "titular": "tercero",
+    "capa": "concesion"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       641000,
+       9663000
+      ],
+      [
+       643000,
+       9663000
+      ],
+      [
+       643000,
+       9664200
+      ],
+      [
+       641000,
+       9664200
+      ],
+      [
+       641000,
+       9663000
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "BP-01",
+    "nombre": "Bosque Protector El Mirador (ficticio)",
+    "capa": "area_protegida"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       647000,
+       9660500
+      ],
+      [
+       649000,
+       9660500
+      ],
+      [
+       649000,
+       9662500
+      ],
+      [
+       647000,
+       9662500
+      ],
+      [
+       647000,
+       9660500
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "codigo": "COM-01",
+    "nombre": "Comunidad San José (ficticia)",
+    "capa": "comunidad"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     644200,
+     9660800
+    ]
+   }
+  }
+ ]
+}

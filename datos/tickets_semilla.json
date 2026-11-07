@@ -1,0 +1,43 @@
+[
+  {
+    "id": "GEO-2026-0412",
+    "tipo": "cartografía",
+    "detalle": "Mapa topográfico de CM-103",
+    "estado": "En elaboración",
+    "asignado": "Analista SIG 1",
+    "compromiso": "2026-11-10"
+  },
+  {
+    "id": "GEO-2026-0415",
+    "tipo": "vuelo",
+    "detalle": "Vuelo de inspección en CM-101",
+    "estado": "Programado",
+    "asignado": "Piloto A",
+    "compromiso": "2026-11-10"
+  },
+  {
+    "id": "GEO-2026-0419",
+    "tipo": "alerta",
+    "detalle": "Desbroce detectado en CM-105",
+    "estado": "Cerrada",
+    "asignado": "Seguridad patrimonial",
+    "compromiso": "2026-11-03",
+    "resolucion": "Verificada en campo: trabajos de remediación autorizados"
+  },
+  {
+    "id": "GEO-2026-0423",
+    "tipo": "cartografía",
+    "detalle": "KMZ de linderos de CM-102",
+    "estado": "Entregado",
+    "asignado": "Analista SIG 2",
+    "compromiso": "2026-11-05"
+  },
+  {
+    "id": "GEO-2026-0430",
+    "tipo": "alerta",
+    "detalle": "Turbidez aguas abajo de CM-106",
+    "estado": "En verificación de campo",
+    "asignado": "Seguridad patrimonial",
+    "compromiso": "2026-11-11"
+  }
+]

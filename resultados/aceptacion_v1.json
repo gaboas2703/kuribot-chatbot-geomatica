@@ -1,0 +1,1006 @@
+{
+ "resumen": {
+  "version": "v1",
+  "modelo": "BETO ajustado (intenciones_beto_v1)",
+  "escenarios": 34,
+  "aprobados": 32,
+  "tasa": 0.9411764705882353,
+  "turnos": 43,
+  "latencia_media_ms": 40.54883720930232,
+  "latencia_p95_ms": 51.8
+ },
+ "escenarios": [
+  {
+   "id": "A01",
+   "descripcion": "Saludo y aviso de transparencia",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "buenos días, ¿con quién hablo?",
+     "respuesta": "¡Hola! Soy KuriBot, un asistente automatizado de Geomática (prototipo académico con datos ficticios). Mis respuestas no sustituyen la revisión de un especialista. Puedo ayudarle a: consultar una concesión (p. ej., «estado de CM-103»); verificar si un punto cae dentro de una concesión; convertir coordenadas WGS 84 ↔ PSAD56; reportar una posible actividad minera ilegal; solicitar un vuelo de dron o un producto cartográfico; consultar el estado de un ticket (GEO-2026-0000); resolver dudas geodésicas frecuentes, o derivarle con una persona.",
+     "intencion": "saludo",
+     "confianza": 0.9905,
+     "decision": "aceptar",
+     "accion": "responder",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 54.3,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A02",
+   "descripcion": "Capacidades",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿qué cosas puedes resolver?",
+     "respuesta": "Puedo ayudarle a: consultar una concesión (p. ej., «estado de CM-103»); verificar si un punto cae dentro de una concesión; convertir coordenadas WGS 84 ↔ PSAD56; reportar una posible actividad minera ilegal; solicitar un vuelo de dron o un producto cartográfico; consultar el estado de un ticket (GEO-2026-0000); resolver dudas geodésicas frecuentes, o derivarle con una persona. Para emergencias con riesgo para personas escriba «emergencia».",
+     "intencion": "ayuda_capacidades",
+     "confianza": 0.9996,
+     "decision": "aceptar",
+     "accion": "responder",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 42.2,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A03",
+   "descripcion": "Ficha de concesión por nombre",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "dame la ficha de la concesión La Ventana",
+     "respuesta": "Concesión CM-103 La Ventana: fase exploración avanzada, estado vigente, superficie 480,0 ha, campamento Central. Alertas en los últimos 90 días: 0; actividad autorizada programada: campaña de sondajes con perforadora contratista. Fuente: catastro interno de demostración (sintético).",
+     "intencion": "consultar_concesion",
+     "confianza": 0.9963,
+     "decision": "aceptar",
+     "accion": "responder",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 46.0,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A04",
+   "descripcion": "Estado de concesión suspendida",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿cerro azul está activa?",
+     "respuesta": "Concesión CM-105 Cerro Azul: fase explotación, estado suspendida temporalmente, superficie 120,0 ha, campamento Sur. Alertas en los últimos 90 días: 3. Fuente: catastro interno de demostración (sintético).",
+     "intencion": "consultar_concesion",
+     "confianza": 0.9638,
+     "decision": "aceptar",
+     "accion": "responder",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 39.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A05",
+   "descripcion": "Ranura faltante de concesión",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "quiero consultar una concesión",
+     "respuesta": "¿De qué concesión? Indique el código (p. ej., CM-103) o el nombre",
+     "intencion": "consultar_concesion",
+     "confianza": 0.9953,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:concesion",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 34.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 2,
+     "entrada": "CM-106",
+     "respuesta": "Concesión CM-106 Los Laureles: fase exploración inicial, estado vigente, superficie 400,0 ha, campamento Sur. Alertas en los últimos 90 días: 1. Fuente: catastro interno de demostración (sintético).",
+     "intencion": "consultar_concesion",
+     "confianza": 0.959,
+     "decision": "ranura",
+     "accion": "responder",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 33.0,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A06",
+   "descripcion": "Punto WGS84 dentro de concesión",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿el punto E 642350 N 9662120 WGS84 está dentro de la concesión?",
+     "respuesta": "El punto está DENTRO de CM-101 Peña Blanca (vigente), a 620 m del lindero. Verificación sobre el catastro sintético del prototipo; para fines legales use el catastro oficial vigente.",
+     "intencion": "verificar_punto",
+     "confianza": 0.9967,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [
+      "R10"
+     ],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 43.8,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A07",
+   "descripcion": "Punto sin datum: se pide y luego cerca de comunidad",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "verifica si 644800 9661500 cae en nuestra área",
+     "respuesta": "¿En qué datum están esas coordenadas: WGS 84 o PSAD56? (en esta zona difieren unos 440 m)",
+     "intencion": "verificar_punto",
+     "confianza": 0.998,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:datum",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 51.8,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 2,
+     "entrada": "wgs84",
+     "respuesta": "El punto está DENTRO de CM-103 La Ventana (vigente), a 200 m del lindero. Hay una comunidad a 922 m: Comunidad San José (ficticia) (R14). Verificación sobre el catastro sintético del prototipo; para fines legales use el catastro oficial vigente.",
+     "intencion": "verificar_punto",
+     "confianza": 0.4105,
+     "decision": "ranura",
+     "accion": "geoproceso",
+     "reglas": [
+      "R10",
+      "R14",
+      "R40"
+     ],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 33.3,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A08",
+   "descripcion": "Punto PSAD56 transformado antes del cruce",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿E 642600 N 9662480 PSAD56 en qué concesión queda?",
+     "respuesta": "Transformé el punto de PSAD56 a WGS 84 con PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m): E 642 348,5 N 9 662 115,5. El punto está DENTRO de CM-101 Peña Blanca (vigente), a 616 m del lindero. Verificación sobre el catastro sintético del prototipo; para fines legales use el catastro oficial vigente.",
+     "intencion": "verificar_punto",
+     "confianza": 0.9974,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [
+      "R10"
+     ],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 56.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A09",
+   "descripcion": "Punto en franja de amortiguamiento",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "chequea 641100 9664950 wgs84 contra el catastro",
+     "respuesta": "El punto está FUERA de las concesiones, a 100 m de CM-104 (dentro de la franja de 500 m, R11). Verificación sobre el catastro sintético del prototipo; para fines legales use el catastro oficial vigente.",
+     "intencion": "verificar_punto",
+     "confianza": 0.9977,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [
+      "R11"
+     ],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 41.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A10",
+   "descripcion": "Punto en concesión de tercero",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿la coordenada 642000 9663600 wgs84 es nuestra?",
+     "respuesta": "El punto está dentro de CT-201, concesión de un tercero con derecho vigente (R12). No debe intervenirse sin revisión de Legal. Verificación sobre el catastro sintético del prototipo; para fines legales use el catastro oficial vigente.",
+     "intencion": "verificar_punto",
+     "confianza": 0.993,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [
+      "R12",
+      "R20",
+      "R35",
+      "R42"
+     ],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 46.1,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "descripcion": "Conversión PSAD56 -> WGS84",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "convierte E 642600 N 9662480 de PSAD56 a WGS84",
+     "respuesta": "Origen: PSAD56. Resultados: WGS 84 / UTM 17S (EPSG:32717): E 642 348,51 m, N 9 662 115,52 m · WGS 84 geográficas (EPSG:4326): -3.056150, -79.719047 (3°03'22.14\"S, 79°43'08.57\"W) · PSAD56 / UTM 17S (EPSG:24877): E 642 600,00 m, N 9 662 480,00 m. Transformación de datum: PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m). SIRGAS 2000 se considera equivalente a WGS 84 al nivel métrico.",
+     "intencion": "convertir_coordenadas",
+     "confianza": 0.9949,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 41.0,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A12",
+   "descripcion": "Conversión geográficas -> UTM",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "pasa -3.0512, -79.7301 a utm, está en wgs84",
+     "respuesta": "Origen: WGS84. Resultados: WGS 84 / UTM 17S (EPSG:32717): E 641 120,66 m, N 9 662 664,27 m · WGS 84 geográficas (EPSG:4326): -3.051200, -79.730100 (3°03'04.32\"S, 79°43'48.36\"W) · PSAD56 / UTM 17S (EPSG:24877): E 641 372,14 m, N 9 663 028,74 m. Transformación de datum: PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m). SIRGAS 2000 se considera equivalente a WGS 84 al nivel métrico.",
+     "intencion": "convertir_coordenadas",
+     "confianza": 0.9979,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 40.1,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A13",
+   "descripcion": "Conversión con dos ranuras",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "necesito convertir unas coordenadas",
+     "respuesta": "Indique las coordenadas a convertir y su datum de origen",
+     "intencion": "convertir_coordenadas",
+     "confianza": 0.9964,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:coord",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 32.8,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 2,
+     "entrada": "645210 9663790",
+     "respuesta": "¿En qué datum están esas coordenadas: WGS 84 o PSAD56? (en esta zona difieren unos 440 m)",
+     "intencion": "convertir_coordenadas",
+     "confianza": 0.8773,
+     "decision": "ranura",
+     "accion": "solicitar_dato:datum",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 38.5,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 3,
+     "entrada": "psad56",
+     "respuesta": "Origen: PSAD56. Resultados: WGS 84 / UTM 17S (EPSG:32717): E 644 958,52 m, N 9 663 425,50 m · WGS 84 geográficas (EPSG:4326): -3.044273, -79.695579 (3°02'39.38\"S, 79°41'44.08\"W) · PSAD56 / UTM 17S (EPSG:24877): E 645 210,00 m, N 9 663 790,00 m. Transformación de datum: PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m). SIRGAS 2000 se considera equivalente a WGS 84 al nivel métrico.",
+     "intencion": "convertir_coordenadas",
+     "confianza": 0.4109,
+     "decision": "ranura",
+     "accion": "geoproceso",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 32.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A14",
+   "descripcion": "Alerta con maquinaria y personas en concesión suspendida",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "hay una retroexcavadora y gente extraña trabajando en Cerro Azul",
+     "respuesta": "Alerta registrada: GEO-2026-0431 · prioridad CRÍTICA. Ubicación: CM-105 Cerro Azul (concesión propia). Evidencias: maquinaria pesada o equipos (sí), personas o campamento no identificados (sí). Antecedentes en 90 días: sí; actividad autorizada programada: no. Probabilidad estimada de actividad no autorizada: 98,7 % (red bayesiana con supuestos expertos; no es una certeza). Acción propuesta: Vuelo de verificación prioritario (≤ 24 h) y notificación a Seguridad y Legal. Primera ventana de vuelo apta: 2026-11-09 (DRN-01, Piloto A). Antes de ejecutar, el supervisor de turno debe aprobar la acción (R41).",
+     "intencion": "reportar_alerta",
+     "confianza": 0.9959,
+     "decision": "aceptar",
+     "accion": "Vuelo de verificación prioritario (≤ 24 h) y notificación a Seguridad y Legal",
+     "reglas": [
+      "R10",
+      "R21",
+      "R30",
+      "R41",
+      "R42"
+     ],
+     "p_intrusion": 0.986842105263158,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 40.7,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A15",
+   "descripcion": "Alerta explicada por actividad autorizada (explaining away)",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "se ve desbroce nuevo y maquinaria en Peña Blanca",
+     "respuesta": "Alerta registrada: GEO-2026-0431 · prioridad MEDIA. Ubicación: CM-101 Peña Blanca (concesión propia). Evidencias: maquinaria pesada o equipos (sí), alteración del terreno o la cobertura (sí). Antecedentes en 90 días: no; actividad autorizada programada: sí. Probabilidad estimada de actividad no autorizada: 21,9 % (red bayesiana con supuestos expertos; no es una certeza). La actividad autorizada programada explica parte de lo observado, por eso la probabilidad no es mayor. Acción propuesta: Revisión satelital en el próximo ciclo y verificación en la ronda programada.",
+     "intencion": "reportar_alerta",
+     "confianza": 0.951,
+     "decision": "aceptar",
+     "accion": "Revisión satelital en el próximo ciclo y verificación en la ronda programada",
+     "reglas": [
+      "R10",
+      "R23",
+      "R33",
+      "R42"
+     ],
+     "p_intrusion": 0.21864951768488744,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 51.1,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A16",
+   "descripcion": "Alerta en tres turnos con ranuras",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "quiero reportar una invasión",
+     "respuesta": "¿Dónde ocurre? Indique la concesión (código o nombre) o las coordenadas con su datum",
+     "intencion": "reportar_alerta",
+     "confianza": 0.6781,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:ubicacion",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 33.8,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 2,
+     "entrada": "en Los Laureles",
+     "respuesta": "¿Qué observó? Por ejemplo: maquinaria, personas o campamento, desbroce o huecos nuevos, agua turbia, ruido o voladuras de noche, trocha nueva. Si no lo sabe, escriba «no sé»",
+     "intencion": "reportar_alerta",
+     "confianza": 0.4963,
+     "decision": "ranura",
+     "accion": "solicitar_dato:evidencias",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 34.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 3,
+     "entrada": "el agua baja turbia",
+     "respuesta": "Alerta registrada: GEO-2026-0431 · prioridad ALTA. Ubicación: CM-106 Los Laureles (concesión propia). Evidencias: agua turbia aguas abajo (sí). Antecedentes en 90 días: sí; actividad autorizada programada: no. Probabilidad estimada de actividad no autorizada: 53,3 % (red bayesiana con supuestos expertos; no es una certeza). Acción propuesta: Programar vuelo de verificación en la primera ventana apta (≤ 72 h). Primera ventana de vuelo apta: 2026-11-09 (DRN-01, Piloto A). Antes de ejecutar, el supervisor de turno debe aprobar la acción (R41). Zona sensible: se requiere revisión humana y protocolo comunitario antes de cualquier acción de campo (R40).",
+     "intencion": "reportar_alerta",
+     "confianza": 0.5237,
+     "decision": "ranura",
+     "accion": "Programar vuelo de verificación en la primera ventana apta (≤ 72 h)",
+     "reglas": [
+      "R10",
+      "R13",
+      "R22",
+      "R32",
+      "R40",
+      "R41",
+      "R42"
+     ],
+     "p_intrusion": 0.5333333333333333,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 39.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A17",
+   "descripcion": "Alerta en concesión de tercero",
+   "aprobado": false,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "vimos maquinaria en E 642000 N 9663600 WGS84",
+     "respuesta": "El punto está dentro de CT-201, concesión de un tercero con derecho vigente (R12). No debe intervenirse sin revisión de Legal. Verificación sobre el catastro sintético del prototipo; para fines legales use el catastro oficial vigente.",
+     "intencion": "verificar_punto",
+     "confianza": 0.9975,
+     "decision": "aceptar",
+     "accion": "geoproceso",
+     "reglas": [
+      "R12",
+      "R20",
+      "R35",
+      "R42"
+     ],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 51.5,
+     "evaluado": true,
+     "ok": false,
+     "fallos": [
+      "intención verificar_punto ∉ ['reportar_alerta']",
+      "falta «REVISIÓN LEGAL»"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A18",
+   "descripcion": "Alerta crítica con ventana de vuelo al día siguiente",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "reporto voladuras de noche y una trocha nueva en El Roble",
+     "respuesta": "Alerta registrada: GEO-2026-0431 · prioridad CRÍTICA. Ubicación: CM-104 El Roble (concesión propia). Evidencias: ruido o voladuras nocturnas (sí), vía o trocha nueva (sí). Antecedentes en 90 días: sí; actividad autorizada programada: no. Probabilidad estimada de actividad no autorizada: 97,9 % (red bayesiana con supuestos expertos; no es una certeza). Acción propuesta: Vuelo de verificación prioritario (≤ 24 h) y notificación a Seguridad y Legal. Primera ventana de vuelo apta: 2026-11-10 (DRN-01, Piloto A). Antes de ejecutar, el supervisor de turno debe aprobar la acción (R41).",
+     "intencion": "reportar_alerta",
+     "confianza": 0.9932,
+     "decision": "aceptar",
+     "accion": "Vuelo de verificación prioritario (≤ 24 h) y notificación a Seguridad y Legal",
+     "reglas": [
+      "R10",
+      "R21",
+      "R30",
+      "R41",
+      "R42"
+     ],
+     "p_intrusion": 0.9785932721712538,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 41.3,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A19",
+   "descripcion": "Alerta con negación y zona sensible",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "hay maquinaria en La Ventana, pero no hay personas",
+     "respuesta": "Alerta registrada: GEO-2026-0431 · prioridad BAJA. Ubicación: CM-103 La Ventana (concesión propia). Evidencias: maquinaria pesada o equipos (sí), personas o campamento no identificados (no). Antecedentes en 90 días: no; actividad autorizada programada: sí. Probabilidad estimada de actividad no autorizada: 4,5 % (red bayesiana con supuestos expertos; no es una certeza). La actividad autorizada programada explica parte de lo observado, por eso la probabilidad no es mayor. Acción propuesta: Registrar y mantener monitoreo. Zona sensible: se requiere revisión humana y protocolo comunitario antes de cualquier acción de campo (R40).",
+     "intencion": "reportar_alerta",
+     "confianza": 0.982,
+     "decision": "aceptar",
+     "accion": "Registrar y mantener monitoreo",
+     "reglas": [
+      "R10",
+      "R13",
+      "R14",
+      "R24",
+      "R34",
+      "R40",
+      "R42"
+     ],
+     "p_intrusion": 0.04509283819628648,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 50.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A20",
+   "descripcion": "Emergencia con armas",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "hay gente armada disparando cerca del campamento",
+     "respuesta": "EMERGENCIA: si hay personas en riesgo, llame de inmediato al ECU 911 y al Jefe de Seguridad del campamento. Aléjese del lugar si es seguro hacerlo. No se enviará personal ni dron a la zona hasta que Seguridad lo autorice (R01). Registré el caso GEO-2026-0431 con prioridad CRÍTICA y lo derivé a una persona.",
+     "intencion": "emergencia_seguridad",
+     "confianza": 0.9994,
+     "decision": "aceptar",
+     "accion": "PROTOCOLO DE EMERGENCIA",
+     "reglas": [
+      "R01",
+      "R42"
+     ],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 41.1,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A21",
+   "descripcion": "Vuelo con fecha no apta por viento",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "necesito un vuelo de dron en San Gregorio",
+     "respuesta": "¿Para qué fecha? (hoy, mañana, un día de la semana o una fecha)",
+     "intencion": "solicitar_vuelo",
+     "confianza": 0.9943,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:fecha",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 45.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 2,
+     "entrada": "mañana",
+     "respuesta": "La fecha solicitada no es apta (2026-11-10: viento 12,5 m/s > 10 m/s). Propuesta: vuelo en CM-102 el 2026-11-11 con DRN-02 y Piloto A (viento 6,0 m/s, sin lluvia, visibilidad 10 km). Solicitud GEO-2026-0431 registrada como pendiente de aprobación del coordinador de vuelos.",
+     "intencion": "solicitar_vuelo",
+     "confianza": 0.9876,
+     "decision": "ranura",
+     "accion": "programar_vuelo",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 20.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A22",
+   "descripcion": "Vuelo el mismo día sin urgencia (anticipación)",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "programa un vuelo en Los Laureles para hoy",
+     "respuesta": "La fecha solicitada no es apta (2026-11-09: anticipación menor a 1 día para solicitud no urgente). Propuesta: vuelo en CM-106 el 2026-11-10 con DRN-01 y Piloto A (viento 8,9 m/s, sin lluvia, visibilidad 10 km). Solicitud GEO-2026-0431 registrada como pendiente de aprobación del coordinador de vuelos.",
+     "intencion": "solicitar_vuelo",
+     "confianza": 0.989,
+     "decision": "aceptar",
+     "accion": "programar_vuelo",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 45.1,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A23",
+   "descripcion": "Solicitud de KMZ",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "necesito el KMZ de los linderos de CM-102",
+     "respuesta": "Solicitud GEO-2026-0431 registrada: KMZ/KML de CM-102. Plazo interno de referencia: 3 día(s) hábil(es). El producto se entregará en EPSG:32717 salvo que indique otro sistema.",
+     "intencion": "solicitar_cartografia",
+     "confianza": 0.9953,
+     "decision": "aceptar",
+     "accion": "crear_ticket",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 52.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A24",
+   "descripcion": "Cartografía con ranuras",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "quiero pedir cartografía",
+     "respuesta": "¿Qué producto necesita? (mapa de ubicación, plano topográfico, ortofoto, KMZ, shapefile o modelo digital de elevación)",
+     "intencion": "solicitar_cartografia",
+     "confianza": 0.9615,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:producto",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 33.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 2,
+     "entrada": "una ortofoto",
+     "respuesta": "¿De qué concesión o área? (código o nombre)",
+     "intencion": "solicitar_cartografia",
+     "confianza": 0.6625,
+     "decision": "ranura",
+     "accion": "solicitar_dato:concesion",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 33.1,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    },
+    {
+     "turno": 3,
+     "entrada": "de El Roble",
+     "respuesta": "Solicitud GEO-2026-0431 registrada: ortofoto de CM-104. Plazo interno de referencia: 3 día(s) hábil(es). El producto se entregará en EPSG:32717 salvo que indique otro sistema.",
+     "intencion": "solicitar_cartografia",
+     "confianza": 0.8091,
+     "decision": "ranura",
+     "accion": "crear_ticket",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 33.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A25",
+   "descripcion": "Estado de ticket existente",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿cómo va la solicitud GEO-2026-0412?",
+     "respuesta": "GEO-2026-0412 (cartografía: Mapa topográfico de CM-103): estado «En elaboración», responsable Analista SIG 1, fecha comprometida 2026-11-10.",
+     "intencion": "estado_solicitud",
+     "confianza": 0.9984,
+     "decision": "aceptar",
+     "accion": "consultar_ticket",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0412",
+     "latencia_ms": 43.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A26",
+   "descripcion": "Ticket inexistente (no inventar)",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "estado del ticket GEO-2026-0999",
+     "respuesta": "No encuentro la solicitud GEO-2026-0999. Revise el número; no puedo suponer su estado.",
+     "intencion": "estado_solicitud",
+     "confianza": 0.9983,
+     "decision": "aceptar",
+     "accion": "no_encontrado",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 41.9,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A27",
+   "descripcion": "FAQ de códigos EPSG",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿qué EPSG corresponde a PSAD56 en UTM 17 sur?",
+     "respuesta": "Códigos de uso frecuente en el proyecto: EPSG:4326 (WGS 84 geográficas), EPSG:32717 (WGS 84 / UTM zona 17S), EPSG:24877 (PSAD56 / UTM zona 17S), EPSG:4248 (PSAD56 geográficas) y EPSG:31977 (SIRGAS 2000 / UTM zona 17S). (Fuente: Base EPSG (pyproj).)",
+     "intencion": "consulta_geodesia",
+     "confianza": 0.8788,
+     "decision": "aceptar",
+     "accion": "responder_faq",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 39.2,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A28",
+   "descripcion": "FAQ de desplazamiento entre datums",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿cuántos metros se mueve un punto entre PSAD56 y WGS84?",
+     "respuesta": "En el área del proyecto, la transformación PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m) desplaza un punto aproximadamente 443 m (ΔE ≈ -251 m, ΔN ≈ -364 m al pasar de PSAD56 a WGS 84). (Fuente: Cálculo con pyproj.)",
+     "intencion": "consulta_geodesia",
+     "confianza": 0.9964,
+     "decision": "aceptar",
+     "accion": "responder_faq",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 39.1,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A29",
+   "descripcion": "Derivación a humano",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "quiero hablar con un analista de verdad",
+     "respuesta": "Entendido. Registré la derivación GEO-2026-0431; un analista de la Mesa de Geomática le contactará por el canal interno en horario laboral (simulado en este prototipo).",
+     "intencion": "hablar_humano",
+     "confianza": 0.9999,
+     "decision": "aceptar",
+     "accion": "derivar_humano",
+     "reglas": [
+      "R03"
+     ],
+     "p_intrusion": null,
+     "ticket": "GEO-2026-0431",
+     "latencia_ms": 41.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A30",
+   "descripcion": "Fuera de alcance",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "¿quién ganó la Copa Libertadores?",
+     "respuesta": "Ese tema está fuera de mi alcance: solo atiendo consultas de Geomática y Catastro minero. Puedo ayudarle a: consultar una concesión (p. ej., «estado de CM-103»); verificar si un punto cae dentro de una concesión; convertir coordenadas WGS 84 ↔ PSAD56; reportar una posible actividad minera ilegal; solicitar un vuelo de dron o un producto cartográfico; consultar el estado de un ticket (GEO-2026-0000); resolver dudas geodésicas frecuentes, o derivarle con una persona.",
+     "intencion": "fuera_alcance",
+     "confianza": 0.9925,
+     "decision": "aceptar",
+     "accion": "fuera_alcance",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 37.6,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A31",
+   "descripcion": "Dato personal enmascarado",
+   "aprobado": false,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "mi cédula es 3000000004, ¿cuál es el estado de CM-104?",
+     "respuesta": "Indique el número de solicitud (formato GEO-2026-0000)",
+     "intencion": "estado_solicitud",
+     "confianza": 0.5523,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:ticket",
+     "reglas": [
+      "R02"
+     ],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 38.5,
+     "evaluado": true,
+     "ok": false,
+     "fallos": [
+      "intención estado_solicitud ∉ ['consultar_concesion']",
+      "falta «renovación»"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A32",
+   "descripcion": "Mensaje con faltas ortográficas",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "ola, nesesito saver el estado de la consecion el robel",
+     "respuesta": "Concesión CM-104 El Roble: fase exploración inicial, estado vigente (renovación en trámite), superficie 188,0 ha, campamento Central. Alertas en los últimos 90 días: 2. Fuente: catastro interno de demostración (sintético).",
+     "intencion": "consultar_concesion",
+     "confianza": 0.8887,
+     "decision": "aceptar",
+     "accion": "responder",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 36.4,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A33",
+   "descripcion": "Despedida",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "gracias, eso es todo",
+     "respuesta": "Gracias por escribir. Si necesita algo más de Geomática, aquí estaré.",
+     "intencion": "despedida",
+     "confianza": 0.9991,
+     "decision": "aceptar",
+     "accion": "cerrar",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 34.2,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  },
+  {
+   "id": "A34",
+   "descripcion": "Coordenadas sin verbo (mensaje ambiguo)",
+   "aprobado": true,
+   "turnos": [
+    {
+     "turno": 1,
+     "entrada": "642350 9662120",
+     "respuesta": "¿En qué datum están esas coordenadas: WGS 84 o PSAD56? (en esta zona difieren unos 440 m)",
+     "intencion": "convertir_coordenadas",
+     "confianza": 0.8773,
+     "decision": "aceptar",
+     "accion": "solicitar_dato:datum",
+     "reglas": [],
+     "p_intrusion": null,
+     "ticket": null,
+     "latencia_ms": 34.6,
+     "evaluado": true,
+     "ok": true,
+     "fallos": []
+    }
+   ]
+  }
+ ]
+}

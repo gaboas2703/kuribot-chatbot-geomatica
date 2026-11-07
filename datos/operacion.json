@@ -1,0 +1,139 @@
+{
+  "fecha_referencia": "2026-11-09",
+  "nota": "Datos operativos sintéticos para la demostración; no proceden de ninguna empresa.",
+  "historial_alertas_90d": {
+    "CM-101": 0,
+    "CM-102": 1,
+    "CM-103": 0,
+    "CM-104": 2,
+    "CM-105": 3,
+    "CM-106": 1,
+    "CT-201": 0
+  },
+  "actividad_autorizada_programada": {
+    "CM-101": "frente de explotación activo con maquinaria propia",
+    "CM-102": "mantenimiento de vías con retroexcavadora propia",
+    "CM-103": "campaña de sondajes con perforadora contratista"
+  },
+  "pronostico": {
+    "Norte": {
+      "0": [
+        4.2,
+        0.0,
+        10
+      ],
+      "1": [
+        12.5,
+        0.0,
+        8
+      ],
+      "2": [
+        6.0,
+        0.0,
+        10
+      ],
+      "3": [
+        5.1,
+        2.4,
+        4
+      ],
+      "4": [
+        3.8,
+        0.0,
+        10
+      ]
+    },
+    "Central": {
+      "0": [
+        7.5,
+        1.2,
+        5
+      ],
+      "1": [
+        5.0,
+        0.0,
+        10
+      ],
+      "2": [
+        4.4,
+        0.0,
+        10
+      ],
+      "3": [
+        11.0,
+        0.0,
+        9
+      ],
+      "4": [
+        6.2,
+        0.0,
+        10
+      ]
+    },
+    "Sur": {
+      "0": [
+        3.1,
+        0.0,
+        10
+      ],
+      "1": [
+        8.9,
+        0.0,
+        10
+      ],
+      "2": [
+        10.8,
+        0.5,
+        6
+      ],
+      "3": [
+        4.0,
+        0.0,
+        10
+      ],
+      "4": [
+        4.5,
+        0.0,
+        10
+      ]
+    }
+  },
+  "drones": {
+    "DRN-01": {
+      "tipo": "multirrotor RTK",
+      "no_disponible": [
+        "2"
+      ]
+    },
+    "DRN-02": {
+      "tipo": "ala fija VTOL",
+      "no_disponible": [
+        "0",
+        "1"
+      ]
+    }
+  },
+  "pilotos": {
+    "Piloto A": {
+      "no_disponible": [
+        "3"
+      ]
+    },
+    "Piloto B": {
+      "no_disponible": [
+        "0"
+      ]
+    }
+  },
+  "politica_vuelo": {
+    "viento_max_ms": 10.0,
+    "lluvia_max_mmh": 0.0,
+    "visibilidad_min_km": 5.0,
+    "anticipacion_min_dias": 1,
+    "horizonte_dias": 4
+  },
+  "sla_cartografia_dias_habiles": {
+    "estandar": 3,
+    "urgente": 1
+  }
+}

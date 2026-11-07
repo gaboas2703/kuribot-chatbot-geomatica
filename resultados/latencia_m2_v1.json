@@ -1,0 +1,7 @@
+{
+ "f1_macro_prueba_limpia_reentrenado": 0.7601581897468673,
+ "media_ms": 42.35800021663181,
+ "p50_ms": 44.038232500042795,
+ "p95_ms": 52.523664699833716,
+ "nota": "M2 reentrenado con la misma partici\u00f3n y semilla de v1; latencia medida sin cach\u00e9 de vectores."
+}

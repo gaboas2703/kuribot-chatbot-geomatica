@@ -1,0 +1,26 @@
+digraph ARQ { rankdir=LR; compound=true; nodesep=0.3; ranksep=0.45; fontname="DejaVu Sans"; bgcolor=white;
+node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=9, fillcolor="#eef5fd", color="#6da7ec"];
+edge [color="#52514e", fontname="DejaVu Sans", fontsize=7];
+U [label="Usuario interno\n(Geomática, Seguridad,\nOperaciones)", shape=ellipse, fillcolor="#fde6dc", color="#eb6834"];
+UI [label="Interfaz\nStreamlit (web) · consola", fillcolor="#f3f2ee", color="#b9b8b3"];
+subgraph cluster_nlu { label="1. Comprensión (NLU)"; style="rounded"; color="#9ec5f4"; fontsize=9;
+  PII [label="Enmascarado de datos\npersonales (R02)"]; NER [label="Extractor de entidades\n(regex + diccionario:\ncoordenadas, datum,\nconcesión, ticket, fecha,\nevidencias con negación)"];
+  NLU [label="Clasificador de intenciones\nBETO ajustado + softmax\ncalibrado (T) · 14 clases", fillcolor="#fde6dc", color="#eb6834", penwidth=2]; }
+subgraph cluster_dm { label="2. Gestión del diálogo y razonamiento"; style="rounded"; color="#9ec5f4"; fontsize=9;
+  DM [label="Gestor de diálogo\nestado · ranuras · aclaración\n· cambio de tema · abstención"];
+  RB [label="Red bayesiana (9 nodos)\nP(intrusión | evidencias)\npgmpy · eliminación de variables", fillcolor="#e3f6ee", color="#1baf7a", penwidth=2];
+  MR [label="Motor de reglas\nencadenamiento hacia adelante\nR01–R42 (5 niveles)\n+ reglas de vuelo V01–V06", fillcolor="#e3f6ee", color="#1baf7a", penwidth=2];
+  GEO [label="Geoprocesos\npyproj (EPSG:3990) · Shapely\npunto en polígono · distancias"]; }
+subgraph cluster_kb { label="3. Base de conocimiento (sintética)"; style="rounded"; color="#9ec5f4"; fontsize=9;
+  KB1 [label="Catastro GeoJSON\n(concesiones, área\nprotegida, comunidad)", shape=cylinder, fillcolor="#f3f2ee", color="#b9b8b3"];
+  KB2 [label="Operación JSON\n(pronóstico, drones,\npilotos, historial)", shape=cylinder, fillcolor="#f3f2ee", color="#b9b8b3"];
+  KB3 [label="FAQ geodésica\n(recuperación TF-IDF)", shape=cylinder, fillcolor="#f3f2ee", color="#b9b8b3"];
+  KB4 [label="Tickets SQLite", shape=cylinder, fillcolor="#f3f2ee", color="#b9b8b3"]; }
+NLG [label="4. Generación (NLG)\nplantillas con datos\nverificados (sin LLM)"];
+LOG [label="Registro auditable\n(JSONL, texto enmascarado)", fillcolor="#f3f2ee", color="#b9b8b3"];
+HUM [label="Derivación a persona\n(analista, Seguridad, Legal)", fillcolor="#fde6dc", color="#eb6834"];
+U -> UI [label="mensaje"]; UI -> PII; PII -> NER; PII -> NLU; NER -> DM; NLU -> DM [label="intención,\nconfianza"];
+DM -> GEO; DM -> RB [label="evidencias"]; RB -> MR [label="posterior"]; GEO -> MR [label="contexto"]; DM -> MR;
+GEO -> KB1 [dir=both]; RB -> KB2 [dir=both, label="H, A"]; MR -> KB2 [dir=both]; DM -> KB3 [dir=both]; DM -> KB4 [dir=both];
+MR -> NLG [label="prioridad,\nacción"]; DM -> NLG; NLG -> UI [label="respuesta +\ntrazabilidad"]; DM -> LOG [style=dashed]; MR -> HUM [style=dashed, label="R01, R03,\nR40, R41"];
+}

@@ -1,0 +1,24 @@
+digraph RB { rankdir=TB; nodesep=0.25; ranksep=0.5; bgcolor=white;
+node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=10, color="#9ec5f4", fillcolor="#eef5fd"];
+H [label="H: Antecedentes: alertas en\nel sector en los últimos\n90 días", fillcolor="#f3f2ee", color="#b9b8b3"];
+A [label="A: Actividad autorizada\nprogramada en el área", fillcolor="#f3f2ee", color="#b9b8b3"];
+I [label="I: Intrusión o actividad\nminera no autorizada\nreal (variable de\ninterés)", fillcolor="#fde6dc", color="#eb6834", penwidth=2];
+M [label="M: Maquinaria o equipos\nobservados"];
+P [label="P: Personas o campamento no\nidentificados"];
+S [label="S: Alteración del terreno o\nde la cobertura"];
+R [label="R: Ruido o voladuras\nnocturnas"];
+T [label="T: Agua turbia aguas abajo"];
+V [label="V: Vía o trocha nueva"];
+{rank=same; H; A;}
+H -> I [color="#52514e"];
+I -> M [color="#52514e"];
+A -> M [color="#52514e"];
+I -> P [color="#52514e"];
+A -> P [color="#52514e"];
+I -> S [color="#52514e"];
+A -> S [color="#52514e"];
+I -> V [color="#52514e"];
+A -> V [color="#52514e"];
+I -> R [color="#52514e"];
+I -> T [color="#52514e"];
+}

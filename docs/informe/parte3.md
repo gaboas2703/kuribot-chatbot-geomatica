@@ -1,0 +1,44 @@
+# Análisis crítico: ética, sesgos y regulación
+
+Un asistente que ayuda a vigilar concesiones mineras no es éticamente neutro: opera sobre territorios donde conviven la empresa, comunidades, mineros artesanales e informales y, a veces, grupos armados, en un contexto de fiscalización débil [@mestanza2022]. Tres implicaciones orientaron el diseño.
+
+**Del lugar a la persona.** La red bayesiana evalúa alertas sobre *lugares*, no sobre individuos; el sistema no guarda nombres ni rostros y enmascara cédulas, teléfonos y correos antes de clasificar y registrar (R02). Aun así, la palabra «intrusión» puede estigmatizar a población vulnerable; por eso R12 y R20 impiden calificar como intrusión lo que ocurre en la concesión de un tercero, y R40 exige revisión humana y protocolo comunitario cerca de comunidades o áreas protegidas.
+
+**Seguridad y sesgo de automatización.** Una probabilidad de 98 % dicha con fluidez se lee como certeza. KuriBot aclara que es una estimación con supuestos expertos, muestra sus evidencias y no ejecuta nada: propone y exige la aprobación del supervisor (R41). Ante señales de violencia, R01 prevalece sobre cualquier probabilidad. Como las señales humanizadoras aumentan la complacencia del usuario [@adam2021], el asistente se identifica como automatizado desde el primer mensaje.
+
+**Rendición de cuentas.** La responsabilidad no se transfiere al modelo: cada respuesta conserva su traza y el Anexo B documenta el clasificador con una ficha de modelo [@mitchell2019].
+
+## Sesgos identificados
+
+1. **Autoría y selección.** Tres personas redactaron el corpus en español escrito; no representa el kichwa ni el shuar, la voz ni la baja alfabetización digital. El F1 macro cae de @@F1L@@ en texto limpio a @@F1R@@ con errores de tecleo: quien escribe de forma no normativa recibe peor servicio [@mehrabi2021].
+2. **Medición.** «Fuera de alcance» agrupa temas heterogéneos y el léxico de emergencias no capta amenazas implícitas; se prefirió errar por falsa alarma y no por omisión.
+3. **Priores y retroalimentación.** $P(I\mid H)$ hace más sospechosos a los sectores con antecedentes. Si $H$ se alimenta con alertas y no con verificaciones, se forma un ciclo (más alertas, más vuelos, más detecciones) que puede estigmatizar sectores; la mitigación es recalibrar $H$ solo con casos verificados y auditar las falsas alarmas por sector.
+4. **Modelo base y evaluación.** La versión de BETO usada fue ajustada con texto periodístico y subrepresenta la terminología minera; además, el mismo equipo escribió el sistema y sus criterios de aceptación.
+
+## Marco regulatorio
+
+El Ecuador no tiene una ley general de IA: la Asamblea archivó en primer debate el proyecto de Ley Orgánica de Regulación y Promoción de la IA el 15 de septiembre de 2026 [@asamblea2026]. Rigen la Ley Orgánica de Protección de Datos Personales [@asamblea2021] y la norma de la Superintendencia de Protección de Datos para sistemas de IA, que pide gestionar riesgos antes del despliegue, informar el carácter automatizado del tratamiento y asegurar revisión humana de decisiones con efectos significativos [@spdp2026a]; su reforma de 2026 delimita las obligaciones de los encargados y exige evaluación de impacto cuando corresponda [@spdp2026b]. Un despliegue real registraría datos de empleados y, quizá, de terceros, por lo que esa evaluación sería prudente.
+
+Como referencia, el Reglamento europeo de IA clasifica los sistemas por riesgo y, desde el 2 de agosto de 2026, obliga a informar a quien interactúa con una IA [@ue2024]; el Ómnibus digital aplazó las obligaciones de alto riesgo, no esa transparencia [@ue2026]. El uso previsto de KuriBot, apoyo interno con decisión humana, no es de alto riesgo, clasificación que habría que revisar si sus salidas llegaran a autoridades. El marco del NIST [@nist2023] y la recomendación de la UNESCO [@unesco2022] convergen con los principios más repetidos en las guías éticas: transparencia, justicia, no maleficencia, responsabilidad y privacidad [@jobin2019].
+
+## Lineamientos de uso responsable
+
+1. **Propósito limitado:** consultas internas y triaje de alertas sobre lugares; prohibido identificar o perfilar personas.
+2. **Transparencia y decisión humana:** aviso de IA en cada sesión, prioridad explicada y aprobación humana de toda acción de campo.
+3. **Datos mínimos:** no pedir cédulas ni teléfonos; enmascarar, retener lo indispensable y eliminar con plazo.
+4. **Seguridad primero:** ante riesgo para personas, protocolo y ECU 911; nunca enviar equipos a ciegas.
+5. **Calibración, auditoría y trazabilidad:** recalibrar la red con verificaciones de campo, revisar falsas alarmas por sector cada trimestre y registrar versión, reglas y responsable de cada decisión.
+
+# Limitaciones y trabajo futuro
+
+Los resultados tienen límites claros. El corpus, el catastro y la operación son sintéticos, y no se midieron usuarios, contención real ni impacto económico. Con 18 frases de prueba por intención, un solo error cambia el F1 de una clase en varios puntos, y las frases de prueba se redactaron aparte, pero por las mismas personas. BETO sigue siendo sensible a los errores de tecleo: el aumento de datos cerró casi toda la brecha con la mejor línea base de n-gramas (0,874 frente a 0,881, diferencia no significativa), pero la caída respecto del texto limpio persiste. Se usó la versión de BETO incluida en spaCy, distribuida con licencia GPL-3.0, sin compararla con el BETO original ni con modelos multilingües. Las tablas de la red bayesiana son juicios expertos y la independencia condicional de las evidencias dado $I$ y $A$ puede no cumplirse (maquinaria y vía nueva suelen aparecer juntas). El extractor reconoce los formatos de coordenadas previstos, pero no todos, y el diálogo no maneja varias intenciones en un mismo mensaje. La FAQ se recupera por similitud de n-gramas de caracteres: en una prueba manual posterior a la evaluación, «¿qué es el datum PSAD56?» devolvió la definición general de datum y no la ficha de PSAD56, porque la consulta comparte más fragmentos con la pregunta general. Por último, no hay autenticación ni integración con el catastro oficial o servicios meteorológicos.
+
+El siguiente paso válido es un piloto de cuatro a seis semanas con un grupo pequeño de usuarios internos, conversaciones registradas con consentimiento y seudonimización, y medición de contención, tiempo de primera respuesta y satisfacción. Con esos datos conviene reentrenar el clasificador, comparar el BETO original, modelos multilingües y ensambles con la línea base de caracteres, estimar las tablas de la red con el histórico de verificaciones (por ejemplo, con priors de Dirichlet que conserven el juicio experto) y contrastar su estructura con pruebas de independencia condicional. En ingeniería quedan la integración con el catastro oficial y un servicio meteorológico, la autenticación por roles, la recuperación semántica de la FAQ y la ingesta automática de alertas satelitales, que se conectaría con el sistema de monitoreo en ArcGIS propuesto en la práctica profesional del equipo.
+
+# Conclusiones
+
+KuriBot muestra que la mesa de servicios de Geomática de una operación minera puede abordarse como un sistema de IA y no como un clasificador aislado. La red neuronal interpreta un lenguaje variable y lleno de códigos; el extractor convierte el mensaje en datos; la red bayesiana combina evidencias inciertas con conocimiento experto y explica por qué una misma observación merece prioridades distintas según el contexto; y el motor de reglas garantiza lo que no puede quedar a merced de una probabilidad: la seguridad del personal, los derechos de terceros y la supervisión humana. De la evaluación se desprenden tres conclusiones:
+
+- El modelo neuronal ajustado superó a la línea base clásica cuando debió generalizar a formulaciones nuevas (F1 macro de 0,848 frente a 0,762 en validación cruzada) y al detectar consultas fuera de alcance, pero no en todos los conjuntos: con texto limpio ambos rindieron igual. La sofisticación de un modelo no garantiza su superioridad; por eso la elección se sustentó en pruebas estadísticas, en el tipo de errores y en un ajuste dirigido que llevó el F1 con ruido de 0,805 a 0,874.
+- El sistema completo aprobó los 34 escenarios de aceptación después de corregir dos fallos con causa identificada, respondió en menos de 60 ms en el percentil 95 y en ningún caso inventó datos, calificó como intrusión lo ocurrido en una concesión de terceros ni propuso acciones de campo sin aprobación humana; con escenarios nuevos aprobó siete de ocho.
+- La conclusión empresarial es condicionada: hay factibilidad técnica y un diseño de gobernanza razonable, pero el valor real depende de la contención que se logre con usuarios reales, de la calidad del catastro integrado y de calibrar la red con verificaciones de campo. No se recomienda pasar a producción sin un piloto controlado.

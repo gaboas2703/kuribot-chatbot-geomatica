@@ -1,0 +1,43 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/kuribot
+plugins: platformdirs-4.13.5, anyio-4.15.1
+collecting ... collected 34 items
+
+pruebas/test_unitarias.py::test_ida_y_vuelta_psad56_wgs84 PASSED         [  2%]
+pruebas/test_unitarias.py::test_desplazamiento_psad56_en_zona_del_proyecto PASSED [  5%]
+pruebas/test_unitarias.py::test_geograficas_a_utm PASSED                 [  8%]
+pruebas/test_unitarias.py::test_operacion_epsg_3990_disponible PASSED    [ 11%]
+pruebas/test_unitarias.py::test_extraer_coordenadas[E 642350 N 9662120-esperado0] PASSED [ 14%]
+pruebas/test_unitarias.py::test_extraer_coordenadas[642350, 9662120-esperado1] PASSED [ 17%]
+pruebas/test_unitarias.py::test_extraer_coordenadas[x=644800 y=9661500-esperado2] PASSED [ 20%]
+pruebas/test_unitarias.py::test_extraer_coordenadas[-3.0512, -79.7301-esperado3] PASSED [ 23%]
+pruebas/test_unitarias.py::test_extraer_coordenadas[3\xb003'04"S 79\xb043'48"W-esperado4] PASSED [ 26%]
+pruebas/test_unitarias.py::test_datum_detectado PASSED                   [ 29%]
+pruebas/test_unitarias.py::test_concesion_por_codigo_nombre_y_errata PASSED [ 32%]
+pruebas/test_unitarias.py::test_evidencias_con_negacion PASSED           [ 35%]
+pruebas/test_unitarias.py::test_fechas_relativas PASSED                  [ 38%]
+pruebas/test_unitarias.py::test_cedula_y_enmascarado PASSED              [ 41%]
+pruebas/test_unitarias.py::test_emergencia_palabras_clave PASSED         [ 44%]
+pruebas/test_unitarias.py::test_pgmpy_coincide_con_enumeracion PASSED    [ 47%]
+pruebas/test_unitarias.py::test_prior_sin_evidencia PASSED               [ 50%]
+pruebas/test_unitarias.py::test_explicacion_alternativa_reduce_posterior PASSED [ 52%]
+pruebas/test_unitarias.py::test_monotonia_evidencias PASSED              [ 55%]
+pruebas/test_unitarias.py::test_sensibilidad_ordenada PASSED             [ 58%]
+pruebas/test_unitarias.py::test_emergencia_prevalece PASSED              [ 61%]
+pruebas/test_unitarias.py::test_tercero_no_se_califica_como_intrusion PASSED [ 64%]
+pruebas/test_unitarias.py::test_umbral_prioridad[0.9-CR\xcdTICA] PASSED  [ 67%]
+pruebas/test_unitarias.py::test_umbral_prioridad[0.6-ALTA] PASSED        [ 70%]
+pruebas/test_unitarias.py::test_umbral_prioridad[0.3-MEDIA] PASSED       [ 73%]
+pruebas/test_unitarias.py::test_umbral_prioridad[0.05-BAJA] PASSED       [ 76%]
+pruebas/test_unitarias.py::test_prioridad_unica_y_determinista PASSED    [ 79%]
+pruebas/test_unitarias.py::test_supervision_humana_en_zona_sensible PASSED [ 82%]
+pruebas/test_unitarias.py::test_ventana_vuelo_evita_viento PASSED        [ 85%]
+pruebas/test_unitarias.py::test_anticipacion_minima PASSED               [ 88%]
+pruebas/test_unitarias.py::test_analisis_espacial PASSED                 [ 91%]
+pruebas/test_unitarias.py::test_ticket_inexistente_no_se_inventa PASSED  [ 94%]
+pruebas/test_unitarias.py::test_areas_derivadas_de_geometria PASSED      [ 97%]
+pruebas/test_unitarias.py::test_riesgo_de_datum_cambia_la_concesion PASSED [100%]
+
+============================== 34 passed in 2.49s ==============================

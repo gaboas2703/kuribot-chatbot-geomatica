@@ -1,0 +1,197 @@
+[
+  {
+    "id": "F01",
+    "tema": "datum",
+    "preguntas": [
+      "diferencia entre PSAD56 y WGS84",
+      "psad56 vs wgs84",
+      "qué es PSAD56"
+    ],
+    "respuesta": "PSAD56 (Datum Provisional Sudamericano de 1956) es un datum local basado en el elipsoide Internacional de 1924 con punto fundamental en La Canoa (Venezuela); WGS 84 es un sistema geocéntrico global. Por eso un mismo punto tiene coordenadas distintas en cada uno. En el área del proyecto, la transformación PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m) desplaza un punto aproximadamente 443 m (ΔE ≈ -251 m, ΔN ≈ -364 m al pasar de PSAD56 a WGS 84).",
+    "fuente": "Base EPSG (pyproj)"
+  },
+  {
+    "id": "F02",
+    "tema": "epsg",
+    "preguntas": [
+      "código EPSG UTM 17 sur",
+      "EPSG de PSAD56 UTM 17S",
+      "EPSG WGS84 geográficas",
+      "qué EPSG uso"
+    ],
+    "respuesta": "Códigos de uso frecuente en el proyecto: EPSG:4326 (WGS 84 geográficas), EPSG:32717 (WGS 84 / UTM zona 17S), EPSG:24877 (PSAD56 / UTM zona 17S), EPSG:4248 (PSAD56 geográficas) y EPSG:31977 (SIRGAS 2000 / UTM zona 17S).",
+    "fuente": "Base EPSG (pyproj)"
+  },
+  {
+    "id": "F03",
+    "tema": "marco_oficial",
+    "preguntas": [
+      "datum oficial en Ecuador",
+      "sistema de referencia oficial del país",
+      "marco de referencia del IGM"
+    ],
+    "respuesta": "El marco geodésico nacional es SIRGAS-ECU, la densificación de SIRGAS en el Ecuador a cargo del Instituto Geográfico Militar (IGM). La realización y la época vigentes deben tomarse de la resolución vigente del IGM; consulte con el analista de geodesia antes de entregar información con fines legales.",
+    "fuente": "Política interna (verificar normativa IGM vigente)"
+  },
+  {
+    "id": "F04",
+    "tema": "sirgas",
+    "preguntas": [
+      "qué es SIRGAS",
+      "época de referencia en SIRGAS"
+    ],
+    "respuesta": "SIRGAS (Sistema de Referencia Geocéntrico para las Américas) es la densificación regional del Marco Internacional de Referencia Terrestre (ITRF). Como las placas tectónicas se mueven, las coordenadas SIRGAS se refieren a una época determinada; comparar coordenadas de épocas distintas exige modelar ese movimiento.",
+    "fuente": "Definición general"
+  },
+  {
+    "id": "F05",
+    "tema": "zona_utm",
+    "preguntas": [
+      "en qué zona UTM está el proyecto",
+      "qué es la zona 17 sur"
+    ],
+    "respuesta": "El área del proyecto (alrededor de 79,7° O) está en la zona UTM 17 (de 84° O a 78° O, meridiano central 81° O), hemisferio sur. Al este de 78° O comienza la zona 18, por lo que parte de la Amazonía cae en 18S.",
+    "fuente": "Definición del sistema UTM"
+  },
+  {
+    "id": "F06",
+    "tema": "no_coinciden",
+    "preguntas": [
+      "mis coordenadas no coinciden con el catastro",
+      "el punto sale corrido en el mapa"
+    ],
+    "respuesta": "Las causas más comunes son: (1) datum distinto, PSAD56 frente a WGS 84 (en esta zona la diferencia es de unos cientos de metros); (2) zona UTM equivocada; (3) Este y Norte invertidos; (4) error propio del receptor GNSS. Indique el datum de origen y puedo convertir o verificar el punto.",
+    "fuente": "Práctica geodésica"
+  },
+  {
+    "id": "F07",
+    "tema": "precision_gnss",
+    "preguntas": [
+      "precisión de un GPS navegador",
+      "diferencia entre RTK y GPS de mano",
+      "qué es RTK"
+    ],
+    "respuesta": "Un receptor de navegación suele ofrecer exactitudes horizontales del orden de unos metros, y empeora bajo cobertura vegetal. El posicionamiento RTK usa correcciones de una base en tiempo real y, con solución fija, alcanza exactitud del orden de centímetros. Para linderos y control use GNSS geodésico.",
+    "fuente": "Práctica geodésica"
+  },
+  {
+    "id": "F08",
+    "tema": "formatos",
+    "preguntas": [
+      "formato de archivo para entregar",
+      "en qué formato entrego la cartografía"
+    ],
+    "respuesta": "Política interna (supuesto del prototipo): entregar vectores en GeoPackage o Shapefile en EPSG:32717, ráster en GeoTIFF, KMZ solo para visualización y mapas en PDF con cuadrícula, escala y metadatos.",
+    "fuente": "Política interna"
+  },
+  {
+    "id": "F09",
+    "tema": "politica_vuelo",
+    "preguntas": [
+      "política para vuelos de dron",
+      "reglas para volar dron",
+      "anticipación para pedir un vuelo"
+    ],
+    "respuesta": "Política interna (supuesto del prototipo): vuelos diurnos con línea de vista, viento ≤ 10 m/s, sin lluvia, visibilidad ≥ 5 km, piloto habilitado y solicitud con al menos un día de anticipación, salvo alertas de prioridad CRÍTICA o ALTA. Toda operación debe cumplir la normativa aeronáutica vigente.",
+    "fuente": "Política interna"
+  },
+  {
+    "id": "F10",
+    "tema": "desplazamiento",
+    "preguntas": [
+      "cuánto se desplaza un punto de PSAD56 a WGS84",
+      "cuántos metros cambia de PSAD a WGS"
+    ],
+    "respuesta": "En el área del proyecto, la transformación PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m) desplaza un punto aproximadamente 443 m (ΔE ≈ -251 m, ΔN ≈ -364 m al pasar de PSAD56 a WGS 84).",
+    "fuente": "Cálculo con pyproj"
+  },
+  {
+    "id": "F11",
+    "tema": "utm",
+    "preguntas": [
+      "qué es una proyección UTM",
+      "qué es el falso norte"
+    ],
+    "respuesta": "UTM es una proyección transversa de Mercator dividida en 60 zonas de 6°. Usa factor de escala 0,9996 en el meridiano central, falso este de 500 000 m y, en el hemisferio sur, falso norte de 10 000 000 m para evitar coordenadas negativas.",
+    "fuente": "Definición del sistema UTM"
+  },
+  {
+    "id": "F12",
+    "tema": "datum_def",
+    "preguntas": [
+      "qué es un datum geodésico",
+      "qué es un datum"
+    ],
+    "respuesta": "Un datum geodésico define la forma y el tamaño de la Tierra (un elipsoide) y su posición respecto del planeta; sobre él se expresan las coordenadas. Cambiar de datum cambia los números aunque el punto físico sea el mismo.",
+    "fuente": "Definición general"
+  },
+  {
+    "id": "F13",
+    "tema": "reporte_alerta",
+    "preguntas": [
+      "información para reportar una alerta",
+      "datos de un reporte de alerta"
+    ],
+    "respuesta": "Indique la concesión o las coordenadas (con su datum), qué observó (maquinaria, desbroce, agua turbia, ruido nocturno, vía nueva), la fecha y la fuente. No incluya datos personales de terceros. Si hay riesgo para personas, escriba «emergencia».",
+    "fuente": "Procedimiento interno"
+  },
+  {
+    "id": "F14",
+    "tema": "sla_mapa",
+    "preguntas": [
+      "cuánto tarda una solicitud de mapa",
+      "cuánto se demora un mapa"
+    ],
+    "respuesta": "Plazo interno (supuesto del prototipo): 3 días hábiles para solicitudes estándar y 1 día hábil para urgentes aprobadas por la jefatura.",
+    "fuente": "Política interna"
+  },
+  {
+    "id": "F15",
+    "tema": "epsg_def",
+    "preguntas": [
+      "qué significa EPSG",
+      "qué es el código EPSG"
+    ],
+    "respuesta": "EPSG es la base de datos de parámetros geodésicos creada por el European Petroleum Survey Group y mantenida hoy por el Comité de Geomática de IOGP. Cada sistema de referencia y cada transformación tiene un código único.",
+    "fuente": "IOGP"
+  },
+  {
+    "id": "F16",
+    "tema": "ortofoto",
+    "preguntas": [
+      "qué es una ortofoto",
+      "para qué sirve una ortofoto"
+    ],
+    "respuesta": "Una ortofoto es una imagen aérea corregida por el relieve y la inclinación de la cámara, de modo que tiene escala uniforme y permite medir distancias y áreas.",
+    "fuente": "Definición general"
+  },
+  {
+    "id": "F17",
+    "tema": "mdt",
+    "preguntas": [
+      "qué es un modelo digital de terreno"
+    ],
+    "respuesta": "Un modelo digital del terreno (MDT) representa la elevación del suelo desnudo; el modelo digital de superficie incluye además vegetación y construcciones.",
+    "fuente": "Definición general"
+  },
+  {
+    "id": "F18",
+    "tema": "alturas",
+    "preguntas": [
+      "diferencia entre altura elipsoidal y ortométrica",
+      "altura del gps y altura sobre el nivel del mar"
+    ],
+    "respuesta": "El GNSS entrega altura elipsoidal (h). La altura ortométrica (H), cercana a la altura sobre el nivel medio del mar, se obtiene con la ondulación del geoide (N): H = h − N, usando un modelo geoidal.",
+    "fuente": "Definición general"
+  },
+  {
+    "id": "F19",
+    "tema": "identificar_datum",
+    "preguntas": [
+      "cómo sé en qué datum están mis coordenadas",
+      "cómo identifico el datum"
+    ],
+    "respuesta": "Revise los metadatos o la configuración del equipo. Si no existen, compare con un punto de control conocido: en esta zona, una diferencia sistemática de unos 440 m respecto del catastro en WGS 84 sugiere coordenadas en PSAD56.",
+    "fuente": "Práctica geodésica"
+  }
+]

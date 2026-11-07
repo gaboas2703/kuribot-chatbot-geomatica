@@ -1,0 +1,21 @@
+KuriBot · BETO ajustado (intenciones_beto_v2)
+Soy KuriBot, un asistente automatizado de Geomática (prototipo académico con datos ficticios). Mis respuestas no sustituyen la revisión de un especialista.
+Escriba «salir» para terminar.
+
+Usted › buenos días
+KuriBot › ¡Hola! Soy KuriBot, un asistente automatizado de Geomática (prototipo académico con datos ficticios). Mis respuestas no sustituyen la revisión de un especialista. Puedo ayudarle a: consultar una concesión (p. ej., «estado de CM-103»); verificar si un punto cae dentro de una concesión; convertir coordenadas WGS 84 ↔ PSAD56; reportar una posible actividad minera ilegal; solicitar un vuelo de dron o un producto cartográfico; consultar el estado de un ticket (GEO-2026-0000); resolver dudas geodésicas frecuentes, o derivarle con una persona.
+   [intención=saludo conf=0.99 decisión=aceptar reglas=— · 45 ms]
+
+Usted › convierte E 642600 N 9662480 de PSAD56 a WGS84
+KuriBot › Origen: PSAD56. Resultados: WGS 84 / UTM 17S (EPSG:32717): E 642 348,51 m, N 9 662 115,52 m · WGS 84 geográficas (EPSG:4326): -3.056150, -79.719047 (3°03'22.14"S, 79°43'08.57"W) · PSAD56 / UTM 17S (EPSG:24877): E 642 600,00 m, N 9 662 480,00 m. Transformación de datum: PSAD56 to WGS 84 (14) (EPSG:3990; exactitud declarada 5 m). SIRGAS 2000 se considera equivalente a WGS 84 al nivel métrico.
+   [intención=convertir_coordenadas conf=0.98 decisión=aceptar reglas=— · 60 ms]
+
+Usted › se ve desbroce nuevo y maquinaria en Peña Blanca
+KuriBot › Alerta registrada: GEO-2026-0431 · prioridad MEDIA. Ubicación: CM-101 Peña Blanca (concesión propia). Evidencias: maquinaria pesada o equipos (sí), alteración del terreno o la cobertura (sí). Antecedentes en 90 días: no; actividad autorizada programada: sí. Probabilidad estimada de actividad no autorizada: 21,9 % (red bayesiana con supuestos expertos; no es una certeza). La actividad autorizada programada explica parte de lo observado, por eso la probabilidad no es mayor. Acción propuesta: Revisión satelital en el próximo ciclo y verificación en la ronda programada.
+   [intención=reportar_alerta conf=0.97 decisión=aceptar reglas=R10,R23,R33,R42 · P(intrusión)=0.219 · 61 ms]
+
+Usted › estado del ticket GEO-2026-0999
+KuriBot › No encuentro la solicitud GEO-2026-0999. Revise el número; no puedo suponer su estado.
+   [intención=estado_solicitud conf=0.99 decisión=aceptar reglas=— · 53 ms]
+
+Usted › salir
